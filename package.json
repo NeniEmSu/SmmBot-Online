@@ -1,0 +1,29 @@
+{
+  "name": "smmbot",
+  "version": "1.0.0",
+  "description": "Smm Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "gulp",
+    "npm",
+    "scss"
+  ],
+  "author": "Neni Emmanuel",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
