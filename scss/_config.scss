@@ -1,0 +1,21 @@
+@import url('https://rsms.me/inter/inter.css');
+
+$backgroudColor: #F5F5F5;
+$mainFont: 'Inter UI',
+'Roboto',
+sans-serif;
+$fontColor: rgb(255, 255, 255);
+$lightColor: #f4f4f4;
+$darkColor: #333;
+
+
+// Functions
+@function set-text-color($backgroudColor) {
+    @if(lightness($backgroudColor) > 40) {
+        @return #000000;
+    }
+
+    @else {
+        @return #ffffff;
+    }
+}

@@ -1,8 +1,10 @@
+@import url("https://rsms.me/inter/inter.css");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+  outline: none; }
 
 html {
   overflow-x: hidden;
@@ -16,27 +18,49 @@ body {
   padding: 1rem auto; }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 58px;
-  line-height: 48.83px; }
+  font-family: "Inter UI", "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 72px; }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 42px;
-  line-height: 39.06px; }
+  font-family: "Inter UI", "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 42px; }
 
 h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Inter UI", "Roboto", sans-serif;
   font-size: 30px;
-  line-height: 31.25px; }
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal; }
+
+h4 {
+  font-family: "Inter UI", "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal; }
 
 h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Inter UI", "Roboto", sans-serif;
   font-size: 18px;
-  line-height: 10px; }
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal; }
+
+h6 {
+  font-family: "Inter UI", "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal; }
 
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Inter UI", "Roboto", sans-serif;
   font-size: 16px;
   line-height: 8.19px;
   color: #333333;
@@ -44,29 +68,23 @@ a {
 
 p {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  padding: 1rem 0; }
+  font-family: "Inter UI", "Roboto", sans-serif;
+  padding: 0.5rem 0; }
 
-button.outline {
-  border-image: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%);
-  border-image-slice: 1;
-  border-width: 3px;
-  background: transparent;
-  box-sizing: border-box;
-  display: block;
-  font-size: 1.125rem;
-  height: 80px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-  z-index: 2;
-  border-radius: 20px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-width: 4px;
-  padding: 0 2rem; }
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 10px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #AEE1F7; }
 
 header {
   position: relative;
@@ -74,20 +92,28 @@ header {
   padding: 10px;
   justify-items: center;
   float: left;
-  background-color: #FFFFFF;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
   width: 100vw;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden; }
   header div.logo {
     left: 0%;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    margin-left: 2.5%; }
   header .headerCentered {
     float: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px; }
     header .headerCentered ul {
       text-align: center;
       justify-self: center;
@@ -102,7 +128,8 @@ header {
     position: absolute;
     top: 50%;
     right: 0%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    margin-right: 2.5%; }
 
 .headerImage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/header_background.png");
@@ -121,19 +148,26 @@ header {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
-    -o-border-radius: 50px; }
+    -o-border-radius: 50px;
+    outline: none; }
   .headerImage .border-gradient {
     border-image: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%);
     border-image-slice: 1;
     border-width: 3px; }
   .headerImage .btn {
     display: block;
-    padding: 1em;
-    margin-top: 90px;
+    padding: 34px 68px;
+    margin-top: 50%;
+    margin-bottom: 50%;
     margin-right: 8em;
-    color: black;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #AEE1F7;
     text-decoration: none;
-    font-size: 1.5em;
     float: left;
     background: transparent;
     border-radius: 50px;
@@ -145,11 +179,10 @@ header {
     background-image: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-top: 40%;
+    margin-bottom: 0;
     text-align: left;
-    float: right;
-    line-height: 60px; }
+    float: right; }
 
 main {
   width: 90%;
@@ -158,79 +191,135 @@ main {
   margin: 1.5rem auto;
   justify-content: center;
   align-items: center; }
-
-.threeCards {
-  display: flex;
-  width: 100%;
-  margin-top: 1.5rem;
-  text-align: center;
-  justify-content: center; }
-  .threeCards .card {
-    background-color: #ffffff;
-    margin: 1.5rem;
-    width: auto;
-    max-width: 400px;
-    height: auto;
-    background: #FFFFFF;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
-    border-radius: 50px;
-    color: #333333;
-    text-align: center; }
-    .threeCards .card h3 {
-      margin: 2.5rem 1.5rem;
-      text-align: left; }
-    .threeCards .card hr {
-      width: 80%;
-      margin: 1rem auto;
-      text-align: left; }
-    .threeCards .card p {
-      margin: 16px;
-      text-align: left; }
-    .threeCards .card button {
-      margin: 1rem auto; }
-
-hr {
-  margin: 1em auto;
-  border: 2px solid #E5E5E5; }
-
-h2 {
-  margin: 1rem auto; }
-
-.socials {
-  display: flex;
-  text-align: center;
-  margin: auto;
-  justify-content: center; }
-  .socials .socialMedia {
-    margin: 1.5rem; }
-
-.cards {
-  display: flex;
-  width: 100%;
-  margin: 1.5rem auto;
-  text-align: center;
-  justify-content: center; }
-  .cards .cardWithImages {
-    background-color: #ffffff;
-    margin: 1rem;
-    width: auto;
-    max-width: 400px;
-    height: auto;
-    background: #FFFFFF;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
-    border-radius: 50px;
-    color: #333333;
-    text-align: center; }
-    .cards .cardWithImages img {
-      margin: 3rem 0; }
-    .cards .cardWithImages h3 {
-      margin: 0 1.5rem; }
-    .cards .cardWithImages p {
-      margin: 16px; }
-    .cards .cardWithImages p.price {
-      font-size: 30px; }
-    .cards .cardWithImages button {
-      margin: 1rem auto; }
+  main button.outline {
+    border-image: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    background: transparent;
+    box-sizing: border-box;
+    display: block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 4px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 15px;
+    text-align: center;
+    color: #557C8C; }
+  main .threeCards {
+    display: flex;
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    justify-self: center; }
+    main .threeCards .card {
+      display: block;
+      background-color: #ffffff;
+      margin: 1.5rem;
+      width: 360px;
+      height: 400px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+      border-radius: 50px;
+      color: #333333;
+      text-align: center; }
+      main .threeCards .card h3 {
+        margin: 20px 0 0 0;
+        text-align: center; }
+      main .threeCards .card hr {
+        width: 80%;
+        margin: 10px auto 0 auto;
+        text-align: left;
+        border: 2px solid #E5E5E5; }
+      main .threeCards .card p {
+        margin: 0 10px 0 38px;
+        text-align: left;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 14px;
+        color: #6D6D6D; }
+      main .threeCards .card button {
+        position: relative;
+        margin: 10px auto;
+        padding: 14px 28px; }
+  main hr {
+    margin: 60px auto 0 auto;
+    border: 2px solid #E5E5E5; }
+  main h2 {
+    margin: 65px auto 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+    color: #333333; }
+  main .socials {
+    display: flex;
+    text-align: center;
+    margin: 65px auto 0 auto;
+    justify-content: center; }
+    main .socials .socialMedia {
+      margin: 1.5rem; }
+    main .socials .roundedBorders {
+      margin: 14px auto 0 auto;
+      padding: 7px 5px;
+      border: 1px solid #C4C4C4;
+      box-sizing: border-box;
+      border-radius: 30px; }
+  main .cards {
+    display: flex;
+    width: 95%;
+    margin: 1.5rem 5%;
+    text-align: center;
+    justify-content: center;
+    justify-self: center; }
+    main .cards .cardWithImages {
+      background-color: #ffffff;
+      margin: 1rem;
+      width: 299px;
+      height: 400px;
+      background: #FFFFFF;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+      border-radius: 50px;
+      color: #333333;
+      text-align: center; }
+      main .cards .cardWithImages img {
+        margin: 3rem 0 0 0; }
+      main .cards .cardWithImages h3 {
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 16px;
+        color: #333333; }
+      main .cards .cardWithImages p.price {
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 30px;
+        color: #333333;
+        padding: 0 auto; }
+      main .cards .cardWithImages p.priceExplanation {
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 12px;
+        color: #6D6D6D;
+        margin: 0 auto;
+        padding: 0 auto; }
+      main .cards .cardWithImages p {
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 12px;
+        text-align: center;
+        color: #6D6D6D; }
+      main .cards .cardWithImages button {
+        position: relative;
+        margin: 10px auto;
+        padding: 14px 28px; }
 
 footer {
   background: -webkit-linear-gradient(bottom, #72a5ba 0%, #9f96c6 60%, #bc8ccd 100%);
@@ -239,7 +328,8 @@ footer {
   background: -moz-linear-gradient(bottom, #72a5ba 0%, #9f96c6 60%, #bc8ccd 100%);
   background: linear-gradient(to top, #72a5ba 0%, #9f96c6 60%, #bc8ccd 100%);
   width: 100vw;
-  height: 70vh; }
+  height: 75vh;
+  margin: 60px 0 0 0; }
   footer .footerContainer {
     width: 80%;
     margin: 1.5rem auto;
@@ -264,6 +354,9 @@ footer {
       color: #FFFFFF; }
       footer .footerContainer .supportOptions .supportOptionsItem {
         width: 10rem;
-        text-align: center; }
+        text-align: center;
+        padding: 20px; }
         footer .footerContainer .supportOptions .supportOptionsItem h5 {
           margin: 1rem 0 0 0; }
+      footer .footerContainer .supportOptions hr {
+        border: 1px solid #FFFFFF; }
