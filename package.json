@@ -17,9 +17,6 @@
   ],
   "author": "Neni Emmanuel",
   "license": "MIT",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "",
   "devDependencies": {
     "browser-sync": "^2.26.3",
