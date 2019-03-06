@@ -85,7 +85,7 @@ p {
     padding: 0.5rem 0;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -403,7 +403,7 @@ footer {
     background: -moz-linear-gradient(bottom, rgb(114, 165, 186) 0%, rgb(159, 150, 198) 60%, rgb(188, 140, 205) 100%);
     background: linear-gradient(to top, rgb(114, 165, 186) 0%, rgb(159, 150, 198) 60%, rgb(188, 140, 205) 100%);
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     margin: 60px 0 0 0;
 
 
@@ -417,7 +417,7 @@ footer {
         .footerTop {
             display: flex;
 
-            a{
+            a {
                 color: #FFFFFF;
             }
 
@@ -536,7 +536,7 @@ body#Услуги {
         width: 100vw;
         background-color: #2C5E8E;
         width: 100vw;
-        height: 75vh;
+        height: 100vh;
         margin: 60px 0 0 0;
     }
 
@@ -591,4 +591,4 @@ body#Услуги {
 }
 
 
-// @import "mobile";
+@import "mobile";

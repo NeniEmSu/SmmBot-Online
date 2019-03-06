@@ -321,7 +321,7 @@ footer {
   background: -moz-linear-gradient(bottom, #72a5ba 0%, #9f96c6 60%, #bc8ccd 100%);
   background: linear-gradient(to top, #72a5ba 0%, #9f96c6 60%, #bc8ccd 100%);
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   margin: 60px 0 0 0; }
   footer .footerContainer {
     width: 80%;
@@ -417,7 +417,7 @@ body#Услуги footer {
   width: 100vw;
   background-color: #2C5E8E;
   width: 100vw;
-  height: 75vh;
+  height: 100vh;
   margin: 60px 0 0 0; }
 
 body#Услуги main button.btn {
