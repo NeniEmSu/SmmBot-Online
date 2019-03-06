@@ -92,18 +92,18 @@ button {
 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: $backgroudColor;
 }
 
 ::-webkit-scrollbar {
-    border-radius: 10px;
+    border-radius: 50px;
     width: 10px;
     background-color: $backgroudColor;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 50px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #AEE1F7;
 }
@@ -252,7 +252,7 @@ header {
 }
 
 main {
-    width: 90%;
+    width: 90vw;
     margin: 0 auto;
     text-align: center;
     margin: 1.5rem auto;
@@ -279,18 +279,18 @@ main {
     }
 
     .threeCards {
-        display: flex;
-        width: 100%;
-        margin-top: 1.5rem;
-        text-align: center;
-        justify-content: center;
-        justify-self: center;
+        margin: 1.5rem auto auto 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-gap: 20px;
+        justify-items: center;
 
         .card {
             display: block;
             background-color: #ffffff;
             margin: 1.5rem;
-            width: 360px;
+            min-width: 360px;
+            max-width: 360px;
             height: 400px;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
             border-radius: 50px;
@@ -351,7 +351,10 @@ main {
     }
 
     .socials {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-gap: 20px;
+        justify-items: center;
         text-align: center;
         margin: 65px auto 0 auto;
         justify-content: center;
@@ -372,17 +375,17 @@ main {
     }
 
     .cards {
-        display: flex;
-        width: 95%;
-        margin: 1.5rem 5%;
-        text-align: center;
-        justify-content: center;
-        justify-self: center;
+        margin: 1.5rem auto 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 55px;
+        justify-items: center;
 
         .cardWithImages {
             background-color: #ffffff;
             margin: 1rem;
-            width: 299px;
+            min-width: 299px;
+            max-width: 299px;
             height: 400px;
             background: #FFFFFF;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
@@ -455,7 +458,6 @@ footer {
     background: -moz-linear-gradient(bottom, rgb(114, 165, 186) 0%, rgb(159, 150, 198) 60%, rgb(188, 140, 205) 100%);
     background: linear-gradient(to top, rgb(114, 165, 186) 0%, rgb(159, 150, 198) 60%, rgb(188, 140, 205) 100%);
     width: 100vw;
-    // height: 100vh;
     margin: 60px 0 0 0;
     height: auto;
     overflow: hidden;
@@ -490,12 +492,14 @@ footer {
 
         .supportOptions {
             width: 80%;
-            margin-top: 2rem;
-            margin-right: 2.5rem;
-            float: right;
-            display: flex;
-            text-align: center;
+            margin: 2rem auto auto 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+            justify-content: center;
             color: #FFFFFF;
+            margin-left: 15%;
 
             .supportOptionsItem {
                 width: 10rem;
@@ -510,6 +514,7 @@ footer {
             }
 
             hr {
+                height: 75%;
                 border: 1px solid #FFFFFF;
             }
         }
@@ -528,7 +533,7 @@ body#Услуги {
     }
 
     .headerImage {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/Услуги_header_background.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/Услуги_header_background.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -584,7 +589,7 @@ body#Услуги {
             -ms-border-radius: 50px;
             -o-border-radius: 50px;
             margin: 0;
-            margin-top: 4rem;
+            margin-top: 6rem;
             justify-self: center;
         }
 

@@ -175,16 +175,16 @@ button {
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: 50px;
   background-color: #F5F5F5; }
 
 ::-webkit-scrollbar {
-  border-radius: 10px;
+  border-radius: 50px;
   width: 10px;
   background-color: #F5F5F5; }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  border-radius: 50px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #AEE1F7; }
 
@@ -294,7 +294,7 @@ header {
       opacity: 1; }
 
 main {
-  width: 90%;
+  width: 90vw;
   margin: 0 auto;
   text-align: center;
   margin: 1.5rem auto;
@@ -316,17 +316,17 @@ main {
     main button.btn:hover {
       background: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%); }
   main .threeCards {
-    display: flex;
-    width: 100%;
-    margin-top: 1.5rem;
-    text-align: center;
-    justify-content: center;
-    justify-self: center; }
+    margin: 1.5rem auto auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+    justify-items: center; }
     main .threeCards .card {
       display: block;
       background-color: #ffffff;
       margin: 1.5rem;
-      width: 360px;
+      min-width: 360px;
+      max-width: 360px;
       height: 400px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
       border-radius: 50px;
@@ -371,7 +371,10 @@ main {
     text-align: center;
     color: #333333; }
   main .socials {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
     text-align: center;
     margin: 65px auto 0 auto;
     justify-content: center; }
@@ -385,16 +388,16 @@ main {
       box-sizing: border-box;
       border-radius: 30px; }
   main .cards {
-    display: flex;
-    width: 95%;
-    margin: 1.5rem 5%;
-    text-align: center;
-    justify-content: center;
-    justify-self: center; }
+    margin: 1.5rem auto 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 55px;
+    justify-items: center; }
     main .cards .cardWithImages {
       background-color: #ffffff;
       margin: 1rem;
-      width: 299px;
+      min-width: 299px;
+      max-width: 299px;
       height: 400px;
       background: #FFFFFF;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
@@ -473,12 +476,14 @@ footer {
         text-align: left; }
     footer .footerContainer .supportOptions {
       width: 80%;
-      margin-top: 2rem;
-      margin-right: 2.5rem;
-      float: right;
-      display: flex;
-      text-align: center;
-      color: #FFFFFF; }
+      margin: 2rem auto auto 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      grid-gap: 20px;
+      justify-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      margin-left: 15%; }
       footer .footerContainer .supportOptions .supportOptionsItem {
         width: 10rem;
         text-align: center;
@@ -488,13 +493,14 @@ footer {
         footer .footerContainer .supportOptions .supportOptionsItem h5 {
           margin: 1rem 0 0 0; }
       footer .footerContainer .supportOptions hr {
+        height: 75%;
         border: 1px solid #FFFFFF; }
 
 body#Услуги header a {
   color: #2C5E8E; }
 
 body#Услуги .headerImage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/Услуги_header_background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/Услуги_header_background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -543,7 +549,7 @@ body#Услуги .headerImage {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     margin: 0;
-    margin-top: 4rem;
+    margin-top: 6rem;
     justify-self: center; }
 
 body#Услуги main button.btn {
@@ -595,3 +601,123 @@ body#Услуги footer {
   position: relative;
   bottom: 0px;
   margin: 60px 0 0 0; }
+
+@media screen and (max-width: 500px) {
+  .headerImage {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .headerImage h1 {
+      padding-top: 15rem;
+      margin: 0 0 3rem 0;
+      text-align: center;
+      float: none;
+      font-size: 48px; }
+    .headerImage a[type="button"] {
+      position: relative;
+      padding: 23px 35px;
+      z-index: 0;
+      float: none;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 26px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #AEE1F7;
+      text-decoration: none;
+      margin: 0 0 0 0;
+      border-radius: 35px; }
+      .headerImage a[type="button"] .icon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1; }
+        .headerImage a[type="button"] .icon path {
+          transition: opacity 0.4s ease; }
+          .headerImage a[type="button"] .icon path:first-of-type {
+            fill: transparent;
+            stroke: url(#linearGradient-1);
+            stroke-width: 3;
+            opacity: 1; }
+          .headerImage a[type="button"] .icon path.icon--plain {
+            opacity: 0;
+            stroke: none;
+            stroke-width: 0; }
+      .headerImage a[type="button"]:hover path:first-of-type {
+        opacity: 0; }
+      .headerImage a[type="button"]:hover path.icon--plain {
+        opacity: 1; }
+  footer {
+    display: block; }
+    footer .footerContainer {
+      width: 80%;
+      margin: 1.5rem auto;
+      text-align: center;
+      justify-content: center;
+      color: #FFFFFF; }
+      footer .footerContainer .footerTop {
+        display: block; }
+        footer .footerContainer .footerTop a {
+          color: #FFFFFF; }
+        footer .footerContainer .footerTop img {
+          margin-top: 2.5rem;
+          margin-right: 1rem; }
+        footer .footerContainer .footerTop .text {
+          margin-top: 2.5rem;
+          text-align: left; }
+      footer .footerContainer .supportOptions {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 20px;
+        margin: 1rem auto; }
+        footer .footerContainer .supportOptions hr {
+          width: 90%; }
+  body#Услуги .headerImage {
+    background-image: linear-gradient(rgba(44, 94, 142, 0.01), rgba(44, 94, 142, 0.3)), url("../img/Услуги_header_background.png");
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    body#Услуги .headerImage .headerImageInner {
+      display: block;
+      float: right;
+      justify-content: center;
+      align-items: center;
+      text-align: right;
+      padding: 0 auto; }
+    body#Услуги .headerImage h1 {
+      margin: 0 5px 0 0;
+      background-image: none;
+      -webkit-background-clip: none;
+      -webkit-text-fill-color: #333333;
+      color: #333333;
+      text-align: right;
+      font-size: 42px; }
+      body#Услуги .headerImage h1 b {
+        font-size: 48px; }
+    body#Услуги .headerImage button.btn {
+      float: right;
+      border: none;
+      display: block;
+      padding: 34px 68px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 22px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #ffffff;
+      text-decoration: none;
+      background: #2C5E8E;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      margin: 0 18px 0 0;
+      margin-top: .5rem;
+      justify-self: center; } }
