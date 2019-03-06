@@ -1,6 +1,10 @@
 @import url('https://rsms.me/inter/inter.css');
+@import url('typeface-inter');
+@import url('Inter-UI');
 
 $backgroudColor: #F5F5F5;
+$primary-color: #444;
+$secondary-color: #00a2ff;
 $mainFont: 'Inter UI',
 'Roboto',
 sans-serif;
@@ -8,6 +12,9 @@ $fontColor: rgb(255, 255, 255);
 $lightColor: #f4f4f4;
 $darkColor: #333;
 
+@mixin easeOut {
+    transition: all 500ms ease-in-out;
+}
 
 // Functions
 @function set-text-color($backgroudColor) {

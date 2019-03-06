@@ -26,6 +26,7 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "inter-ui": "^3.3.4"
+    "inter-ui": "^3.3.4",
+    "typeface-inter": "^3.2.0"
   }
 }
