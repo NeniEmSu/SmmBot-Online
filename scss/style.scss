@@ -180,37 +180,6 @@ header {
     align-items: center;
     text-align: center;
 
-
-    .btn {
-        border: 4PX solid #BC8CCD;
-        border-top-color: #BC8CCD;
-        border-bottom-color: #72A5BA;
-        display: block;
-        padding: 34px 68px;
-        margin-top: 50%;
-        margin-bottom: 50%;
-        margin-right: 8em;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 36px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        color: #AEE1F7;
-        text-decoration: none;
-        float: left;
-        background: transparent;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
-
-        &:hover {
-            background: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%);
-        }
-    }
-
     h1 {
         background-image: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%);
         -webkit-background-clip: text;
@@ -219,7 +188,67 @@ header {
         margin-bottom: 0;
         text-align: left;
         float: right;
+        margin-left: 26rem;
     }
+
+    a[type="button"] {
+        position: relative;
+        padding: 35px 68px;
+        z-index: 0;
+        float: left;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #AEE1F7;
+        text-decoration: none;
+        margin-top: 50%;
+        margin-bottom: 50%;
+        margin-right: -9rem;
+
+
+        .icon {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+
+
+            path {
+                transition: opacity 0.4s ease;
+
+                &:first-of-type {
+                    fill: transparent;
+                    stroke: url(#linearGradient-1);
+                    stroke-width: 3;
+                    opacity: 1;
+                }
+
+                &.icon--plain {
+                    opacity: 0;
+                    stroke: none;
+                    stroke-width: 0;
+                }
+            }
+        }
+
+        &:hover {
+            path {
+                &:first-of-type {
+                    opacity: 0;
+                }
+
+                &.icon--plain {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
 }
 
 main {
@@ -242,11 +271,6 @@ main {
         color: #557C8C;
         text-decoration: none;
         background: transparent;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
         margin: 0;
 
         &:hover {
@@ -296,9 +320,16 @@ main {
             }
 
             button {
+                color: #557C8C;
+                font-size: 15px;
                 position: relative;
                 margin: 10px auto;
                 padding: 14px 28px;
+                border-radius: 28px;
+                -webkit-border-radius: 28px;
+                -moz-border-radius: 28px;
+                -ms-border-radius: 28px;
+                -o-border-radius: 28px;
             }
         }
 
@@ -331,8 +362,9 @@ main {
         }
 
         .roundedBorders {
+            font-size: 14px;
             margin: 14px auto 0 auto;
-            padding: 7px 5px;
+            padding: 7px 9px;
             border: 1px solid #C4C4C4;
             box-sizing: border-box;
             border-radius: 30px;
@@ -400,9 +432,16 @@ main {
             }
 
             button {
+                color: #557C8C;
+                font-size: 15px;
                 position: relative;
                 margin: 10px auto;
-                padding: 14px 28px;
+                padding: 14px 37px;
+                border-radius: 37px;
+                -webkit-border-radius: 37px;
+                -moz-border-radius: 37px;
+                -ms-border-radius: 37px;
+                -o-border-radius: 37px;
             }
         }
 
@@ -507,16 +546,23 @@ body#Услуги {
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 0 auto;
         }
 
         h1 {
             margin: 0;
             margin-top: 6rem;
+            margin-right: 8rem;
             background-image: none;
             -webkit-background-clip: none;
             -webkit-text-fill-color: #333333;
             color: #333333;
             text-align: left;
+            font-size: 48px;
+
+            b {
+                font-size: 58px;
+            }
         }
 
         button.btn {
@@ -526,7 +572,7 @@ body#Услуги {
             font-style: normal;
             font-weight: normal;
             line-height: normal;
-            font-size: 36px;
+            font-size: 22px;
             text-align: center;
             letter-spacing: 0.1em;
             color: #ffffff;
@@ -538,7 +584,7 @@ body#Услуги {
             -ms-border-radius: 50px;
             -o-border-radius: 50px;
             margin: 0;
-            margin-top: 3rem;
+            margin-top: 4rem;
             justify-self: center;
         }
 
@@ -565,9 +611,35 @@ body#Услуги {
             margin: 0;
         }
 
-        .threeCards {
 
-            .card {
+        section.one {
+            h2 {
+                font-size: 47px;
+            }
+
+            .threeCards {
+
+                .card {
+
+                    button {
+                        position: relative;
+                        margin: 10px auto;
+                        padding: 14px 28px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    section.two {
+        h2 {
+            font-size: 41px;
+        }
+
+        .cards {
+
+            .cardWithImages {
 
                 button {
                     position: relative;
@@ -579,17 +651,10 @@ body#Услуги {
         }
     }
 
-    .cards {
-
-        .cardWithImages {
-
-            button {
-                position: relative;
-                margin: 10px auto;
-                padding: 14px 28px;
-            }
+    section.three {
+        h2 {
+            font-size: 41px;
         }
-
     }
 
     footer {
