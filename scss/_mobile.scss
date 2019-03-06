@@ -5,6 +5,23 @@
 @include mediaMd {}
 
 @include mediaSm {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+
     .headerImage {
         display: block;
         justify-content: center;
@@ -77,6 +94,27 @@
 
     }
 
+    main {
+
+        section.one {
+            h2 {
+                font-size: 28px;
+            }
+        }
+    }
+
+    section.two {
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+    section.three {
+        h2 {
+            font-size: 28px;
+        }
+    }
+
     footer {
         display: block;
 
@@ -138,16 +176,17 @@
             }
 
             h1 {
-                margin: 0 5px 0 0;
+                margin: 0 14px 0 0;
+                padding: 5rem 0 0 0;
                 background-image: none;
                 -webkit-background-clip: none;
-                -webkit-text-fill-color: #333333;
-                color: #333333;
+                -webkit-text-fill-color: #000000;
+                color: #000000;
                 text-align: right;
-                font-size: 42px;
+                // font-size: 42px;
 
                 b {
-                    font-size: 48px;
+                    font-size: 42px;
                 }
             }
 
@@ -155,11 +194,11 @@
                 float: right;
                 border: none;
                 display: block;
-                padding: 34px 68px;
+                padding: 24px 34px;
                 font-style: normal;
                 font-weight: normal;
                 line-height: normal;
-                font-size: 22px;
+                // font-size: 22px;
                 text-align: center;
                 letter-spacing: 0.1em;
                 color: #ffffff;
@@ -177,5 +216,28 @@
 
 
         }
+
+        main {
+
+            section.one {
+                h2 {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        section.two {
+            h2 {
+                font-size: 28px;
+            }
+        }
+
+        section.three {
+            h2 {
+                font-size: 28px;
+            }
+        }
     }
+
+
 }
