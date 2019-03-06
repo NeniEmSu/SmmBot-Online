@@ -239,7 +239,7 @@ main {
         font-weight: normal;
         line-height: normal;
         text-align: center;
-        color: #AEE1F7;
+        color: #557C8C;
         text-decoration: none;
         background: transparent;
         border-radius: 50px;
@@ -416,8 +416,12 @@ footer {
     background: -moz-linear-gradient(bottom, rgb(114, 165, 186) 0%, rgb(159, 150, 198) 60%, rgb(188, 140, 205) 100%);
     background: linear-gradient(to top, rgb(114, 165, 186) 0%, rgb(159, 150, 198) 60%, rgb(188, 140, 205) 100%);
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     margin: 60px 0 0 0;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    bottom: 0px;
 
 
     .footerContainer {
@@ -507,7 +511,7 @@ body#Услуги {
 
         h1 {
             margin: 0;
-            margin-top: 3rem;
+            margin-top: 6rem;
             background-image: none;
             -webkit-background-clip: none;
             -webkit-text-fill-color: #333333;
@@ -534,7 +538,7 @@ body#Услуги {
             -ms-border-radius: 50px;
             -o-border-radius: 50px;
             margin: 0;
-            margin-top: 3.2rem;
+            margin-top: 3rem;
             justify-self: center;
         }
 
@@ -596,7 +600,10 @@ body#Услуги {
         background: none;
         background-color: #2C5E8E;
         width: 100vw;
-        height: 100vh;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        bottom: 0px;
         margin: 60px 0 0 0;
     }
 
