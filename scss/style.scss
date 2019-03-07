@@ -1,5 +1,4 @@
 @import "config";
-@import "menu";
 
 * {
     margin: 0;
@@ -237,9 +236,12 @@ header {
         }
 
         &:hover {
+            @include easeOut;
+
             path {
                 &:first-of-type {
                     opacity: 0;
+
                 }
 
                 &.icon--plain {
@@ -275,6 +277,7 @@ main {
 
         &:hover {
             background: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%);
+            @include easeOut;
         }
     }
 
