@@ -284,14 +284,14 @@ main {
     .threeCards {
         margin: 1.5rem auto auto 0;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-gap: 20px;
         justify-items: center;
 
         .card {
             display: block;
             background-color: #ffffff;
-            margin: 1.5rem;
+            // margin: 1.5rem;
             min-width: 360px;
             max-width: 360px;
             height: 400px;
@@ -355,7 +355,7 @@ main {
 
     .socials {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
         grid-gap: 20px;
         justify-items: center;
         text-align: center;
@@ -380,7 +380,7 @@ main {
     .cards {
         margin: 1.5rem auto 60px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 55px;
         justify-items: center;
 
@@ -497,7 +497,7 @@ footer {
             width: 80%;
             margin: 2rem auto auto 0;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             grid-gap: 20px;
             justify-items: center;
             justify-content: center;
@@ -560,7 +560,8 @@ body#Услуги {
         h1 {
             margin: 0;
             margin-top: 6rem;
-            margin-right: 8rem;
+            margin-right: 10rem;
+            margin-bottom: 5rem;
             background-image: none;
             -webkit-background-clip: none;
             -webkit-text-fill-color: #333333;
@@ -594,6 +595,10 @@ body#Услуги {
             margin: 0;
             margin-top: 6rem;
             justify-self: center;
+
+            &:hover {
+                opacity: .95;
+            }
         }
 
 
