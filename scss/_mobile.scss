@@ -1,4 +1,12 @@
-@include mediaXl {}
+@include mediaXl {
+    main {
+        max-width: 1300px;
+    }
+
+    .footerContainer {
+        max-width: 1100px;
+    }
+}
 
 @include mediaLg {
     .headerImage {

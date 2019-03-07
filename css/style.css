@@ -511,6 +511,12 @@ body#Услуги footer {
   bottom: 0px;
   margin: 60px 0 0 0; }
 
+@media screen and (min-width: 1171px) {
+  main {
+    max-width: 1300px; }
+  .footerContainer {
+    max-width: 1100px; } }
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .headerImage {
     display: block;
