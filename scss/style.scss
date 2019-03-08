@@ -632,7 +632,7 @@ footer {
             justify-items: center;
             justify-content: center;
             color: #FFFFFF;
-            margin-left: 0%;
+            margin-left: calc(100vw - 92vw);
 
             .supportOptionsItem {
                 width: 10rem;

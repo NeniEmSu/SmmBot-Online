@@ -444,7 +444,7 @@ footer {
       justify-items: center;
       justify-content: center;
       color: #FFFFFF;
-      margin-left: 0%; }
+      margin-left: calc(100vw - 92vw); }
       footer .footerContainer .supportOptions .supportOptionsItem {
         width: 10rem;
         text-align: center;
