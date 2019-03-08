@@ -206,22 +206,6 @@ main {
   margin: 1.5rem auto;
   justify-content: center;
   align-items: center; }
-  main button.btn {
-    border: 4PX solid #BC8CCD;
-    border-top-color: #BC8CCD;
-    border-bottom-color: #72A5BA;
-    display: block;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    text-align: center;
-    color: #557C8C;
-    text-decoration: none;
-    background: transparent;
-    margin: 0; }
-    main button.btn:hover {
-      background: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%);
-      transition: all 500ms ease-in-out; }
   main .threeCards {
     margin: 1.5rem auto auto 0;
     display: grid;
@@ -238,6 +222,12 @@ main {
       border-radius: 50px;
       color: #333333;
       text-align: center; }
+      main .threeCards .card:nth-child(1) .cardParag {
+        padding-bottom: 4rem; }
+      main .threeCards .card:nth-child(2) .cardParag {
+        padding-bottom: 0.5rem; }
+      main .threeCards .card:nth-child(3) .cardParag {
+        padding-bottom: 7rem; }
       main .threeCards .card h3 {
         margin: 20px 0 0 0;
         text-align: center; }
@@ -254,7 +244,8 @@ main {
         line-height: normal;
         font-size: 14px;
         color: #6D6D6D; }
-      main .threeCards .card button {
+      main .threeCards .card a.cardSvgButton {
+        display: block;
         color: #557C8C;
         font-size: 15px;
         position: relative;
@@ -264,7 +255,38 @@ main {
         -webkit-border-radius: 28px;
         -moz-border-radius: 28px;
         -ms-border-radius: 28px;
-        -o-border-radius: 28px; }
+        -o-border-radius: 28px;
+        position: relative;
+        z-index: 0;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        text-align: center;
+        text-decoration: none; }
+        main .threeCards .card a.cardSvgButton .icon {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          height: 100%;
+          width: 100%;
+          z-index: -1; }
+          main .threeCards .card a.cardSvgButton .icon path {
+            transition: opacity 0.4s ease; }
+            main .threeCards .card a.cardSvgButton .icon path:first-of-type {
+              fill: transparent;
+              stroke: url(#linearGradient-1);
+              stroke-width: 3;
+              opacity: 1; }
+            main .threeCards .card a.cardSvgButton .icon path.icon--plain {
+              opacity: 0;
+              stroke: none;
+              stroke-width: 0; }
+        main .threeCards .card a.cardSvgButton:hover {
+          transition: all 500ms ease-in-out; }
+          main .threeCards .card a.cardSvgButton:hover path:first-of-type {
+            opacity: 0; }
+          main .threeCards .card a.cardSvgButton:hover path.icon--plain {
+            opacity: 1; }
   main hr {
     margin: 60px auto 0 auto;
     border: 2px solid #E5E5E5; }
@@ -340,7 +362,8 @@ main {
         font-size: 12px;
         text-align: center;
         color: #6D6D6D; }
-      main .cards .cardWithImages button {
+      main .cards .cardWithImages a.cardSvgButton {
+        display: block;
         color: #557C8C;
         font-size: 15px;
         position: relative;
@@ -350,7 +373,38 @@ main {
         -webkit-border-radius: 37px;
         -moz-border-radius: 37px;
         -ms-border-radius: 37px;
-        -o-border-radius: 37px; }
+        -o-border-radius: 37px;
+        position: relative;
+        z-index: 0;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        text-align: center;
+        text-decoration: none; }
+        main .cards .cardWithImages a.cardSvgButton .icon {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          height: 100%;
+          width: 100%;
+          z-index: -1; }
+          main .cards .cardWithImages a.cardSvgButton .icon path {
+            transition: opacity 0.4s ease; }
+            main .cards .cardWithImages a.cardSvgButton .icon path:first-of-type {
+              fill: transparent;
+              stroke: url(#linearGradient-1);
+              stroke-width: 3;
+              opacity: 1; }
+            main .cards .cardWithImages a.cardSvgButton .icon path.icon--plain {
+              opacity: 0;
+              stroke: none;
+              stroke-width: 0; }
+        main .cards .cardWithImages a.cardSvgButton:hover {
+          transition: all 500ms ease-in-out; }
+          main .cards .cardWithImages a.cardSvgButton:hover path:first-of-type {
+            opacity: 0; }
+          main .cards .cardWithImages a.cardSvgButton:hover path.icon--plain {
+            opacity: 1; }
 
 footer {
   background: -webkit-linear-gradient(bottom, #72a5ba 0%, #9f96c6 60%, #bc8ccd 100%);
@@ -371,7 +425,7 @@ footer {
     justify-content: center;
     color: #FFFFFF; }
     footer .footerContainer .footerTop {
-      display: flex; }
+      display: flex flex; }
       footer .footerContainer .footerTop a {
         color: #FFFFFF; }
       footer .footerContainer .footerTop img {
@@ -1025,7 +1079,7 @@ body#Услуги footer {
       .headerImage a#svgButton:hover path.icon--plain {
         opacity: 1; }
   main section.one .card {
-    min-width: 300px; }
+    min-width: 340px; }
     main section.one .card p {
       margin: 0 10px 0 28px; }
   main section.one h2 {
@@ -1126,3 +1180,63 @@ body#Услуги footer {
     font-size: 28px; }
   body#Услуги section.three h2 {
     font-size: 28px; } }
+
+@media screen and (max-width: 400px) {
+  .headerImage {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .headerImage h1 {
+      padding-top: calc(100vh - 60vh);
+      margin: 0 0 2rem 0;
+      text-align: center;
+      float: none;
+      font-size: 48px; }
+    .headerImage a#svgButton {
+      position: relative;
+      padding: 23px 35px;
+      z-index: 0;
+      float: none;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 26px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #AEE1F7;
+      text-decoration: none;
+      margin: 0 0 0 0;
+      border-radius: 35px; }
+      .headerImage a#svgButton .icon {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1; }
+        .headerImage a#svgButton .icon path {
+          transition: opacity 0.4s ease; }
+          .headerImage a#svgButton .icon path:first-of-type {
+            fill: transparent;
+            stroke: url(#linearGradient-1);
+            stroke-width: 3;
+            opacity: 1; }
+          .headerImage a#svgButton .icon path.icon--plain {
+            opacity: 0;
+            stroke: none;
+            stroke-width: 0; }
+      .headerImage a#svgButton:hover path:first-of-type {
+        opacity: 0; }
+      .headerImage a#svgButton:hover path.icon--plain {
+        opacity: 1; }
+  section.one .card {
+    min-width: 360px; }
+    section.one .card p {
+      padding: 0.5rem 0;
+      margin: 0 10px 0 26px; }
+  section.one h2 {
+    font-size: 28px; } }
+
+section.two h2 {
+  font-size: 28px; }

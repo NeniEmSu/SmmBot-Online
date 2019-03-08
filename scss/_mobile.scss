@@ -822,7 +822,7 @@
         section.one {
 
             .card {
-                min-width: 300px;
+                min-width: 340px;
 
                 p {
                     margin: 0 10px 0 28px;
@@ -996,4 +996,100 @@
     }
 
 
+}
+
+@include mediaXSm {
+    .headerImage {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            padding-top: calc(100vh - 60vh);
+            margin: 0 0 2rem 0;
+            text-align: center;
+            float: none;
+            font-size: 48px;
+        }
+
+        a#svgButton {
+            position: relative;
+            padding: 23px 35px;
+            z-index: 0;
+            float: none;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 26px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: #AEE1F7;
+            text-decoration: none;
+            margin: 0 0 0 0;
+            border-radius: 35px;
+
+            .icon {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+
+
+                path {
+                    transition: opacity 0.4s ease;
+
+                    &:first-of-type {
+                        fill: transparent;
+                        stroke: url(#linearGradient-1);
+                        stroke-width: 3;
+                        opacity: 1;
+                    }
+
+                    &.icon--plain {
+                        opacity: 0;
+                        stroke: none;
+                        stroke-width: 0;
+                    }
+                }
+            }
+
+            &:hover {
+                path {
+                    &:first-of-type {
+                        opacity: 0;
+                    }
+
+                    &.icon--plain {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+    }
+
+    section.one {
+
+        .card {
+            min-width: 360px;
+
+            p {
+                padding: 0.5rem 0;
+                margin: 0 10px 0 26px;
+            }
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+}
+
+section.two {
+    h2 {
+        font-size: 28px;
+    }
 }
