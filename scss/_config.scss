@@ -29,6 +29,31 @@ $darkColor: #333;
 
 
 //Media Query Mixins
+
+@mixin mediaXlLandscape {
+    @media screen and (max-width: 830px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin mediaLandscape {
+    @media screen and (max-width: 720px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin mediaSmLandscape {
+    @media screen and (max-width: 540px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin mediaXXSm {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
 @mixin mediaXSm {
     @media screen and (max-width: 400px) {
         @content;
