@@ -420,13 +420,13 @@ footer {
   position: relative;
   bottom: 0px; }
   footer .footerContainer {
-    width: 80%;
+    width: 100%;
     margin: 1.5rem auto;
     text-align: center;
     justify-content: center;
     color: #FFFFFF; }
     footer .footerContainer .footerTop {
-      display: flex flex; }
+      display: flex; }
       footer .footerContainer .footerTop a {
         color: #FFFFFF; }
       footer .footerContainer .footerTop img {
@@ -444,7 +444,7 @@ footer {
       justify-items: center;
       justify-content: center;
       color: #FFFFFF;
-      margin-left: 15%; }
+      margin-left: 0%; }
       footer .footerContainer .supportOptions .supportOptionsItem {
         width: 10rem;
         text-align: center;
