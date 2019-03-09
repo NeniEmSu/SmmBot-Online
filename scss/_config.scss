@@ -1,11 +1,7 @@
-@import url('https://rsms.me/inter/inter.css');
-@import url('typeface-inter');
-@import url('Inter-UI');
-
 $backgroudColor: #F5F5F5;
 $primary-color: #444;
 $secondary-color: #333;
-$mainFont: 'Inter UI',
+$mainFont: 'Inter',
 'Roboto',
 sans-serif;
 $fontColor: rgb(255, 255, 255);
@@ -31,7 +27,7 @@ $darkColor: #333;
 //Media Query Mixins
 
 @mixin mediaXlLandscape {
-    @media screen and (max-width: 830px) and (orientation: landscape) {
+    @media screen and (max-width: 980px) and (orientation: landscape) {
         @content;
     }
 }
@@ -49,7 +45,7 @@ $darkColor: #333;
 }
 
 @mixin mediaXXSm {
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 360px) {
         @content;
     }
 }

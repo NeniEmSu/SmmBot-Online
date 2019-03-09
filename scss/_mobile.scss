@@ -223,15 +223,19 @@
 
     // Menu Overlay
     .menu {
-        z-index: 2;
-        top: 0px;
         width: 100%;
-        height: 100%;
         opacity: 0.9;
         visibility: hidden;
 
         &.show {
             visibility: visible;
+            position: fixed;
+            z-index: 2;
+            height: auto;
+            margin-top: 10%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         &-nav {
@@ -241,7 +245,7 @@
             justify-content: center;
             float: none;
             width: 100%;
-            height: 100vh;
+            height: auto;
             overflow-x: hidden;
         }
 
@@ -264,6 +268,8 @@
 
         .nav-item {
             display: block;
+            padding: 20px;
+            font-size: 32px;
             transform: translate3d(600px, 0, 0);
             @include easeOut;
 
@@ -273,7 +279,7 @@
             }
 
             &.current>a {
-                color: $secondary-color;
+                color: #72A5BA;
             }
         }
 
@@ -601,15 +607,18 @@
 
     // Menu Overlay
     .menu {
-        z-index: 2;
-        top: 0px;
-        width: 100%;
-        height: 100%;
         opacity: 0.9;
         visibility: hidden;
 
         &.show {
             visibility: visible;
+            position: fixed;
+            z-index: 2;
+            height: auto;
+            margin-top: 10%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         &-nav {
@@ -619,7 +628,7 @@
             justify-content: center;
             float: none;
             width: 100%;
-            height: 100vh;
+            height: auto;
             overflow-x: hidden;
         }
 
@@ -642,6 +651,8 @@
 
         .nav-item {
             display: block;
+
+            font-size: 18px;
             transform: translate3d(600px, 0, 0);
             @include easeOut;
 
@@ -651,7 +662,7 @@
             }
 
             &.current>a {
-                color: $secondary-color;
+                color: #72A5BA;
             }
         }
 
@@ -928,6 +939,132 @@
 }
 
 @include mediaXSm {
+
+    .menu-btn {
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 16px;
+        cursor: pointer;
+        @include easeOut;
+
+        .btn-line {
+            width: 28px;
+            height: 3px;
+            margin: 0 0 5px 0;
+            background: black;
+            @include easeOut;
+        }
+
+        // rotate into x with menu lines
+        &.close {
+
+
+            .btn-line {
+
+                //Line 1 -rotate
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+
+                //Line 2 -Hide
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                //Line 3 -rotate
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(7px, -6px);
+                }
+            }
+        }
+    }
+
+    // Menu Overlay
+    .menu {
+        opacity: 0.9;
+        visibility: hidden;
+
+        &.show {
+            visibility: visible;
+            position: fixed;
+            z-index: 2;
+            height: auto;
+            margin-top: 10%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &-nav {
+            display: block;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            float: none;
+            width: 100%;
+            height: auto;
+            overflow-x: hidden;
+        }
+
+        &-nav {
+            margin: 0;
+            padding: 0;
+            background: darken($primary-color, 5);
+            list-style: none;
+            transform: translate3d(0, -100%, 0);
+            @include easeOut;
+
+            &.show {
+                transform: translate3d(0, 0, 0);
+                -webkit-transform: translate3d(0, 0, 0);
+                -moz-transform: translate3d(0, 0, 0);
+                -ms-transform: translate3d(0, 0, 0);
+                -o-transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .nav-item {
+            display: block;
+            padding: 20px;
+            font-size: 22px;
+            transform: translate3d(600px, 0, 0);
+            @include easeOut;
+
+            &.show {
+                //slide from right
+                transform: translate3d(0, 0, 0);
+            }
+
+            &.current>a {
+                color: #72A5BA;
+            }
+        }
+
+        .nav-link {
+            display: inline-block;
+            position: relative;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            font-weight: 300;
+            color: white;
+            text-decoration: none;
+            @include easeOut;
+
+            &:hover {
+                color: lightgray;
+                transform: scale(1.1);
+            }
+        }
+    }
+
     .headerImage {
         display: block;
         justify-content: center;
@@ -1005,11 +1142,11 @@
     section.one {
 
         .card {
-            min-width: 360px;
+            min-width: 3px;
 
             p {
                 padding: 0.5rem 0;
-                margin: 0 10px 0 26px;
+                margin: 0 10px 0 20px;
             }
         }
 
@@ -1028,11 +1165,28 @@
     footer {
         text-align: center;
 
-        body#Услуги {}
+
     }
 
-    @include mediaXXSm {
+    body#Услуги {}
+}
 
+@include mediaXXSm {
+
+    .headerImage {
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    main {
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+    body#Услуги {
         .headerImage {
             h1 {
                 font-size: 32px;
@@ -1040,30 +1194,44 @@
         }
 
         main {
+            width: 100%;
 
             h2 {
                 font-size: 28px;
             }
         }
+    }
+}
 
-        body#Услуги {
-            .headerImage {
-                h1 {
-                    font-size: 32px;
-                }
-            }
+@include mediaLandscape {
 
-            main {
-                width: 100%;
+    .headerImage {
+        h1 {
+            padding-top: calc(100vh - 90vh);
+            margin: 0 20px 0 0;
+            font-size: 32px;
+            float: right;
+            text-align: left;
+        }
 
-                h2 {
-                    font-size: 28px;
-                }
-            }
+        a#svgButton {
+            margin: 10% 0 0 20px;
+            position: relative;
+            z-index: 0;
+            float: left;
+        }
+
+    }
+
+
+    main {
+
+        h2 {
+            font-size: 30px;
         }
     }
 
-    @include mediaLandscape {
+    body#Услуги {
 
         .headerImage {
             h1 {
@@ -1072,7 +1240,15 @@
                 font-size: 32px;
                 float: right;
                 text-align: left;
+
+                b {
+                    font-size: 38px;
+                }
             }
+
+
+
+
 
             a#svgButton {
                 margin: 10% 0 0 20px;
@@ -1090,46 +1266,42 @@
                 font-size: 30px;
             }
         }
+    }
+}
 
-        body#Услуги {
+@include mediaXlLandscape {
 
-            .headerImage {
-                h1 {
-                    padding-top: calc(100vh - 90vh);
-                    margin: 0 20px 0 0;
-                    font-size: 32px;
-                    float: right;
-                    text-align: left;
-
-                    b {
-                        font-size: 38px;
-                    }
-                }
+    .headerImage {
+        h1 {
+            padding-top: calc(100vh - 80vh);
+            margin: 0 50px 0 0;
+            font-size: 38px;
+            float: right;
+            text-align: left;
+        }
 
 
 
 
 
-                a#svgButton {
-                    margin: 10% 0 0 20px;
-                    position: relative;
-                    z-index: 0;
-                    float: left;
-                }
+        a#svgButton {
+            margin: 18% 0 0 0;
+            position: relative;
+            z-index: 0;
+            float: left;
+        }
 
-            }
+    }
 
 
-            main {
+    main {
 
-                h2 {
-                    font-size: 30px;
-                }
-            }
+        h2 {
+            font-size: 30px;
         }
     }
 
-    @include mediaXlLandscape {
+    body#Услуги {
 
         .headerImage {
             h1 {
@@ -1138,14 +1310,14 @@
                 font-size: 38px;
                 float: right;
                 text-align: left;
+
+                b {
+                    font-size: 48px;
+                }
             }
 
-
-
-
-
             a#svgButton {
-                margin: 18% 0 0 0;
+                margin: 18% 0 0 60px;
                 position: relative;
                 z-index: 0;
                 float: left;
@@ -1160,42 +1332,43 @@
                 font-size: 30px;
             }
         }
+    }
+}
 
-        body#Услуги {
+@include mediaLandscape {
 
-            .headerImage {
-                h1 {
-                    padding-top: calc(100vh - 80vh);
-                    margin: 0 50px 0 0;
-                    font-size: 38px;
-                    float: right;
-                    text-align: left;
-
-                    b {
-                        font-size: 48px;
-                    }
-                }
-
-                a#svgButton {
-                    margin: 18% 0 0 60px;
-                    position: relative;
-                    z-index: 0;
-                    float: left;
-                }
-
-            }
+    .headerImage {
+        h1 {
+            padding-top: calc(100vh - 90vh);
+            margin: 0 10px 0 0;
+            font-size: 30px;
+            float: right;
+            text-align: left;
+        }
 
 
-            main {
 
-                h2 {
-                    font-size: 30px;
-                }
-            }
+
+
+        a#svgButton {
+            margin: 15% 0 0 20px;
+            position: relative;
+            z-index: 0;
+            float: left;
+            font-size: 16px;
+        }
+
+    }
+
+
+    main {
+
+        h2 {
+            font-size: 30px;
         }
     }
 
-    @include mediaLandscape {
+    body#Услуги {
 
         .headerImage {
             h1 {
@@ -1204,6 +1377,10 @@
                 font-size: 30px;
                 float: right;
                 text-align: left;
+
+                b {
+                    font-size: 35.5px;
+                }
             }
 
 
@@ -1225,44 +1402,6 @@
 
             h2 {
                 font-size: 30px;
-            }
-        }
-
-        body#Услуги {
-
-            .headerImage {
-                h1 {
-                    padding-top: calc(100vh - 90vh);
-                    margin: 0 10px 0 0;
-                    font-size: 30px;
-                    float: right;
-                    text-align: left;
-
-                    b {
-                        font-size: 35.5px;
-                    }
-                }
-
-
-
-
-
-                a#svgButton {
-                    margin: 15% 0 0 20px;
-                    position: relative;
-                    z-index: 0;
-                    float: left;
-                    font-size: 16px;
-                }
-
-            }
-
-
-            main {
-
-                h2 {
-                    font-size: 30px;
-                }
             }
         }
     }
