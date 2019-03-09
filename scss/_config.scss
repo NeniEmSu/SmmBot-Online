@@ -1,12 +1,15 @@
 $backgroudColor: #F5F5F5;
-$primary-color: #444;
-$secondary-color: #333;
+// color of homepage links
+$primary-color: #333333;
+// color of services page link
+$secondary-color: #2C5E8E;
 $mainFont: 'Inter',
 'Roboto',
 sans-serif;
-$fontColor: rgb(255, 255, 255);
+$fontColor: #6D6D6D;
 $lightColor: #ffffff;
-$darkColor: #333;
+$darkColor: #333333;
+;
 
 @mixin easeOut {
     transition: all 500ms ease-in-out;
