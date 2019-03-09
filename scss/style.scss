@@ -18,9 +18,8 @@ body {
     color: set-text-color($backgroudColor);
     width: 100%;
     height: 100%;
-    padding: 1rem auto;
+    padding: 1rem 0;
     overflow-x: hidden;
-
 }
 
 h1 {
@@ -37,7 +36,6 @@ h2 {
     font-weight: 500;
     line-height: normal;
     font-size: 42px;
-
 }
 
 h3 {
@@ -122,7 +120,6 @@ header {
     border-bottom-right-radius: 10px;
     overflow: hidden;
 
-
     div.logo {
         left: 0%;
         margin: 1rem 0;
@@ -141,12 +138,10 @@ header {
         line-height: normal;
         font-size: 16px;
 
-
         ul {
             text-align: center;
             justify-self: center;
             justify-content: center;
-
 
             li {
                 display: inline;
@@ -208,7 +203,6 @@ header {
         margin-bottom: 50%;
         margin-right: -9rem;
 
-
         .icon {
             position: absolute;
             top: 0px;
@@ -216,7 +210,6 @@ header {
             height: 100%;
             width: 100%;
             z-index: -1;
-
 
             path {
                 transition: opacity 0.4s ease;
@@ -242,7 +235,6 @@ header {
             path {
                 &:first-of-type {
                     opacity: 0;
-
                 }
 
                 &.icon--plain {
@@ -251,7 +243,6 @@ header {
             }
         }
     }
-
 }
 
 main {
@@ -260,10 +251,8 @@ main {
     text-align: center;
     margin: 1.5rem auto;
     justify-content: center;
-    align-items: center;
+    align-items: center; // button.btn {
 
-
-    // button.btn {
     //     border: 4PX solid #BC8CCD;
     //     border-top-color: #BC8CCD;
     //     border-bottom-color: #72A5BA;
@@ -276,13 +265,11 @@ main {
     //     text-decoration: none;
     //     background: transparent;
     //     margin: 0;
-
     //     &:hover {
     //         background: linear-gradient(to bottom, #BC8CCD 0%, #72A5BA 100%);
     //         @include easeOut;
     //     }
     // }
-
     .threeCards {
         margin: 1.5rem auto auto 0;
         display: grid;
@@ -292,8 +279,7 @@ main {
 
         .card {
             display: block;
-            background-color: #ffffff;
-            // margin: 1.5rem;
+            background-color: #ffffff; // margin: 1.5rem;
             min-width: 360px;
             max-width: 360px;
             height: 400px;
@@ -302,15 +288,11 @@ main {
             color: #333333;
             text-align: center;
 
-
-
-
             &:nth-child(1) {
                 .cardParag {
                     padding-bottom: 4rem;
                 }
             }
-
 
             &:nth-child(2) {
                 .cardParag {
@@ -318,13 +300,11 @@ main {
                 }
             }
 
-
             &:nth-child(3) {
                 .cardParag {
                     padding-bottom: 7rem;
                 }
             }
-
 
             h3 {
                 margin: 20px 0 0 0;
@@ -368,7 +348,6 @@ main {
                 text-align: center;
                 text-decoration: none;
 
-
                 .icon {
                     position: absolute;
                     top: 0px;
@@ -376,7 +355,6 @@ main {
                     height: 100%;
                     width: 100%;
                     z-index: -1;
-
 
                     path {
                         transition: opacity 0.4s ease;
@@ -402,7 +380,6 @@ main {
                     path {
                         &:first-of-type {
                             opacity: 0;
-
                         }
 
                         &.icon--plain {
@@ -411,9 +388,7 @@ main {
                     }
                 }
             }
-
         }
-
     }
 
     hr {
@@ -442,7 +417,6 @@ main {
 
         .socialMedia {
             margin: 1.5rem;
-
         }
 
         .roundedBorders {
@@ -484,7 +458,6 @@ main {
                 line-height: normal;
                 font-size: 16px;
                 color: #333333;
-
             }
 
             p.price {
@@ -493,7 +466,7 @@ main {
                 line-height: normal;
                 font-size: 30px;
                 color: #333333;
-                padding: 0 auto;
+                padding: 0;
             }
 
             p.priceExplanation {
@@ -503,7 +476,7 @@ main {
                 font-size: 12px;
                 color: #6D6D6D;
                 margin: 0 auto;
-                padding: 0 auto;
+                padding: 0;
             }
 
             p {
@@ -535,7 +508,6 @@ main {
                 text-align: center;
                 text-decoration: none;
 
-
                 .icon {
                     position: absolute;
                     top: 0px;
@@ -543,7 +515,6 @@ main {
                     height: 100%;
                     width: 100%;
                     z-index: -1;
-
 
                     path {
                         transition: opacity 0.4s ease;
@@ -569,7 +540,6 @@ main {
                     path {
                         &:first-of-type {
                             opacity: 0;
-
                         }
 
                         &.icon--plain {
@@ -578,9 +548,7 @@ main {
                     }
                 }
             }
-
         }
-
     }
 }
 
@@ -596,7 +564,6 @@ footer {
     overflow: hidden;
     position: relative;
     bottom: 0px;
-
 
     .footerContainer {
         width: 100%;
@@ -652,13 +619,10 @@ footer {
             }
         }
     }
-
 }
 
 // Services css
-
 body#Услуги {
-
     header {
         a {
             color: #2C5E8E;
@@ -684,7 +648,7 @@ body#Услуги {
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 0 auto;
+            padding: 0;
         }
 
         h1 {
@@ -730,12 +694,9 @@ body#Услуги {
                 opacity: .95;
             }
         }
-
-
     }
 
     main {
-
         button.btn {
             border: none;
             display: block;
@@ -754,23 +715,19 @@ body#Услуги {
             margin: 0;
         }
 
-
         section.one {
             h2 {
                 font-size: 47px;
             }
 
             .threeCards {
-
                 .card {
-
                     button {
                         position: relative;
                         margin: 10px auto;
                         padding: 14px 28px;
                     }
                 }
-
             }
         }
     }
@@ -787,16 +744,13 @@ body#Услуги {
         }
 
         .cards {
-
             .cardWithImages {
-
                 button {
                     position: relative;
                     margin: 10px auto;
                     padding: 14px 28px;
                 }
             }
-
         }
     }
 
@@ -814,8 +768,6 @@ body#Услуги {
         bottom: 0px;
         margin: 60px 0 0 0;
     }
-
 }
-
 
 @import "mobile";
