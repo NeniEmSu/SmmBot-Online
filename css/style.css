@@ -813,7 +813,7 @@ body#Услуги footer {
       display: block;
       background-color: #ffffff;
       margin: 1.5rem auto;
-      min-width: 360px;
+      min-width: 300px;
       max-width: 360px;
       height: 400px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
@@ -825,9 +825,9 @@ body#Услуги footer {
       main section.one .threeCards .card:nth-child(1) .cardParag {
         padding-bottom: 4rem; }
       main section.one .threeCards .card:nth-child(2) .cardParag {
-        padding-bottom: 0.5rem; }
+        padding-bottom: 0rem; }
       main section.one .threeCards .card:nth-child(3) .cardParag {
-        padding-bottom: 7rem; }
+        padding-bottom: 6rem; }
       main section.one .threeCards .card h3 {
         margin: 20px 0 0 0;
         text-align: center; }
@@ -837,19 +837,19 @@ body#Услуги footer {
         text-align: left;
         border: 2px solid #E5E5E5; }
       main section.one .threeCards .card p {
-        margin: 0 10px 0 28px;
+        margin: 0 2px 0 15px;
         text-align: left;
         font-style: normal;
         font-weight: normal;
         line-height: normal;
-        font-size: 16px;
+        font-size: 15px;
         color: #6D6D6D; }
       main section.one .threeCards .card a.cardSvgButton {
         display: block;
         color: #557C8C;
         font-size: 15px;
         position: relative;
-        margin: 10px auto;
+        margin: 6px auto;
         padding: 14px 28px;
         border-radius: 28px;
         -webkit-border-radius: 28px;
@@ -907,8 +907,12 @@ body#Услуги footer {
       border: 1px solid #C4C4C4;
       box-sizing: border-box;
       border-radius: 30px; }
-  section.three h2 {
-    font-size: 28px; }
+  section.three {
+    align-content: center;
+    justify-content: center;
+    justify-items: center; }
+    section.three h2 {
+      font-size: 28px; }
   footer {
     display: block; }
     footer .footerContainer {
@@ -1506,7 +1510,7 @@ body#Услуги footer {
       background-color: #ffffff;
       margin: 1.5rem auto;
       min-width: 290px;
-      max-width: 300px;
+      max-width: 300px !important;
       height: 400px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
       border-radius: 50px;
