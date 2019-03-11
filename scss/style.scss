@@ -217,7 +217,7 @@ header {
                 &:first-of-type {
                     fill: transparent;
                     stroke: url(#linearGradient-1);
-                    stroke-width: 5;
+                    stroke-width: 4;
                     opacity: 1;
                 }
 
@@ -568,11 +568,15 @@ footer {
             .text {
                 margin-top: 2.5rem;
                 text-align: left;
+
+                h4 {
+                    margin-bottom: 1rem;
+                }
             }
         }
 
         .supportOptions {
-            width: 80%;
+            width: 85%;
             margin: 2rem auto auto 0;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -583,14 +587,18 @@ footer {
             margin-left: calc(100vw - 92vw);
 
             .supportOptionsItem {
-                width: 10rem;
+                width: 12rem;
                 text-align: center;
                 padding: 20px;
                 margin-right: 3.5rem;
                 margin-left: 3.5rem;
 
                 h5 {
-                    margin: 1rem 0 0 0;
+                    margin: 1rem 0;
+                }
+
+                p {
+                    text-align: center;
                 }
             }
 

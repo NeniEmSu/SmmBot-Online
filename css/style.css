@@ -184,7 +184,7 @@ header {
         .headerImage a#svgButton .icon path:first-of-type {
           fill: transparent;
           stroke: url(#linearGradient-1);
-          stroke-width: 5;
+          stroke-width: 4;
           opacity: 1; }
         .headerImage a#svgButton .icon path.icon--plain {
           opacity: 0;
@@ -430,8 +430,10 @@ footer {
       footer .footerContainer .footerTop .text {
         margin-top: 2.5rem;
         text-align: left; }
+        footer .footerContainer .footerTop .text h4 {
+          margin-bottom: 1rem; }
     footer .footerContainer .supportOptions {
-      width: 80%;
+      width: 85%;
       margin: 2rem auto auto 0;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -441,13 +443,15 @@ footer {
       color: #FFFFFF;
       margin-left: calc(100vw - 92vw); }
       footer .footerContainer .supportOptions .supportOptionsItem {
-        width: 10rem;
+        width: 12rem;
         text-align: center;
         padding: 20px;
         margin-right: 3.5rem;
         margin-left: 3.5rem; }
         footer .footerContainer .supportOptions .supportOptionsItem h5 {
-          margin: 1rem 0 0 0; }
+          margin: 1rem 0; }
+        footer .footerContainer .supportOptions .supportOptionsItem p {
+          text-align: center; }
       footer .footerContainer .supportOptions hr {
         height: 75%;
         border: 1px solid #FFFFFF; }
