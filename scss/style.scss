@@ -230,10 +230,12 @@ header {
         }
 
         &:hover {
+            color: white;
             @include easeOut;
 
             path {
                 &:first-of-type {
+                    color: white;
                     opacity: 0;
                 }
 
@@ -347,6 +349,7 @@ main {
                             stroke: url(#linearGradient-1);
                             stroke-width: 3;
                             opacity: 1;
+                            color: white;
                         }
 
                         &.icon--plain {
@@ -358,6 +361,7 @@ main {
                 }
 
                 &:hover {
+                    color: white;
                     @include easeOut;
 
                     path {

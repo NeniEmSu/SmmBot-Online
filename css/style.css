@@ -191,8 +191,10 @@ header {
           stroke: none;
           stroke-width: 0; }
     .headerImage a#svgButton:hover {
+      color: white;
       transition: all 500ms ease-in-out; }
       .headerImage a#svgButton:hover path:first-of-type {
+        color: white;
         opacity: 0; }
       .headerImage a#svgButton:hover path.icon--plain {
         opacity: 1; }
@@ -274,12 +276,14 @@ main {
               fill: transparent;
               stroke: url(#linearGradient-1);
               stroke-width: 3;
-              opacity: 1; }
+              opacity: 1;
+              color: white; }
             main .threeCards .card a.cardSvgButton .icon path.icon--plain {
               opacity: 0;
               stroke: none;
               stroke-width: 0; }
         main .threeCards .card a.cardSvgButton:hover {
+          color: white;
           transition: all 500ms ease-in-out; }
           main .threeCards .card a.cardSvgButton:hover path:first-of-type {
             opacity: 0; }
