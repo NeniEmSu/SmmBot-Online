@@ -118,6 +118,8 @@ header {
     -moz-transition: ease-in 250ms;
     -ms-transition: ease-in 250ms;
     -o-transition: ease-in 250ms; }
+  header a {
+    text-decoration: none; }
   header .login {
     font-size: 18px;
     margin-right: 2.5%; }
@@ -219,11 +221,11 @@ main {
       text-align: center;
       margin: 0 auto; }
       main .threeCards .card:nth-child(1) .cardParag {
-        padding-bottom: 4rem; }
+        padding-bottom: 60px; }
       main .threeCards .card:nth-child(2) .cardParag {
-        padding-bottom: 0.5rem; }
+        padding-bottom: 10px; }
       main .threeCards .card:nth-child(3) .cardParag {
-        padding-bottom: 7rem; }
+        padding-bottom: 95px; }
       main .threeCards .card h3 {
         margin: 20px 0 0 0;
         text-align: center; }
@@ -245,7 +247,7 @@ main {
         color: #557C8C;
         font-size: 15px;
         position: relative;
-        margin: 10px auto;
+        margin: 0 auto;
         padding: 14px 28px;
         border-radius: 28px;
         -webkit-border-radius: 28px;
@@ -462,8 +464,20 @@ footer {
         height: 75%;
         border: 1px solid #FFFFFF; }
 
+body#Услуги header li.nav-item.active a {
+  opacity: 1; }
+
 body#Услуги header a {
-  color: #2C5E8E; }
+  color: #2C5E8E;
+  opacity: 0.75;
+  transition: ease-in-out 250ms;
+  -webkit-transition: ease-in-out 250ms;
+  -moz-transition: ease-in-out 250ms;
+  -ms-transition: ease-in-out 250ms;
+  -o-transition: ease-in-out 250ms; }
+
+body#Услуги header a:hover {
+  opacity: 1; }
 
 body#Услуги .headerImage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/Услуги_header_background.png");
@@ -629,7 +643,7 @@ body#Услуги footer {
   .footerContainer .footerTop .text {
     text-align: center; }
   body#Услуги .headerImage {
-    background-image: linear-gradient(rgba(44, 94, 142, 0.01), rgba(44, 94, 142, 0.3)), url("../img/Услуги_header_background.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/Услуги_header_background.png");
     display: block;
     justify-content: center;
     align-items: center;
@@ -823,7 +837,7 @@ body#Услуги footer {
       display: block;
       background-color: #ffffff;
       margin: 1.5rem auto;
-      min-width: 300px;
+      min-width: 310px;
       max-width: 360px;
       height: 400px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
@@ -833,11 +847,11 @@ body#Услуги footer {
       justify-items: center;
       justify-content: center; }
       main section.one .threeCards .card:nth-child(1) .cardParag {
-        padding-bottom: 4rem; }
+        padding-bottom: 60px; }
       main section.one .threeCards .card:nth-child(2) .cardParag {
-        padding-bottom: 0rem; }
+        padding-bottom: 10px; }
       main section.one .threeCards .card:nth-child(3) .cardParag {
-        padding-bottom: 6rem; }
+        padding-bottom: 95px; }
       main section.one .threeCards .card h3 {
         margin: 20px 0 0 0;
         text-align: center; }
@@ -959,7 +973,7 @@ body#Услуги footer {
         footer .footerContainer .supportOptions hr {
           display: none; }
   body#Услуги .headerImage {
-    background-image: linear-gradient(rgba(44, 94, 142, 0.01), rgba(44, 94, 142, 0.3)), url("../img/Услуги_header_background.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/Услуги_header_background.png");
     display: block;
     justify-content: center;
     align-items: center;
@@ -1142,7 +1156,7 @@ body#Услуги footer {
   main section.one .card {
     min-width: 340px; }
     main section.one .card p {
-      margin: 0 10px 0 28px; }
+      margin: 0 28px 0 10px; }
   main section.one h2 {
     font-size: 28px; }
   section.two h2 {
@@ -1376,7 +1390,7 @@ body#Услуги footer {
   section.one .card {
     min-width: 300px; }
     section.one .card p {
-      padding: 0.5rem 0;
+      padding: 0.425rem 0;
       margin: 0 10px 0 20px; }
   section.one h2 {
     font-size: 28px; }
@@ -1535,11 +1549,11 @@ body#Услуги footer {
       color: #333333;
       text-align: center; }
       section.one .threeCards .card:nth-child(1) .cardParag {
-        padding-bottom: 4rem; }
+        padding-bottom: 60px; }
       section.one .threeCards .card:nth-child(2) .cardParag {
-        padding-bottom: 0rem; }
+        padding-bottom: 10px; }
       section.one .threeCards .card:nth-child(3) .cardParag {
-        padding-bottom: 7rem; }
+        padding-bottom: 10px; }
       section.one .threeCards .card h3 {
         margin: 10px 0 0 0;
         text-align: center; }

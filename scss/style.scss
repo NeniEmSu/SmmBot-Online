@@ -180,6 +180,10 @@ header {
         -o-transition: ease-in 250ms;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .login {
         font-size: 18px;
         margin-right: 2.5%;
@@ -313,19 +317,19 @@ main {
 
             &:nth-child(1) {
                 .cardParag {
-                    padding-bottom: 4rem;
+                    padding-bottom: 60px;
                 }
             }
 
             &:nth-child(2) {
                 .cardParag {
-                    padding-bottom: 0.5rem;
+                    padding-bottom: 10px;
                 }
             }
 
             &:nth-child(3) {
                 .cardParag {
-                    padding-bottom: 7rem;
+                    padding-bottom: 95px;
                 }
             }
 
@@ -356,7 +360,7 @@ main {
                 color: #557C8C;
                 font-size: 15px;
                 position: relative;
-                margin: 10px auto;
+                margin: 0 auto;
                 padding: 14px 28px;
                 border-radius: 28px;
                 -webkit-border-radius: 28px;
@@ -663,8 +667,24 @@ footer {
 // Services css
 body#Услуги {
     header {
+
+        li.nav-item.active a {
+            opacity: 1;
+        }
+
         a {
             color: #2C5E8E;
+            opacity: 0.75;
+            transition: ease-in-out 250ms;
+            -webkit-transition: ease-in-out 250ms;
+            -moz-transition: ease-in-out 250ms;
+            -ms-transition: ease-in-out 250ms;
+            -o-transition: ease-in-out 250ms;
+        }
+
+        a:hover {
+
+            opacity: 1;
         }
     }
 
