@@ -955,12 +955,12 @@ body#Услуги footer {
           text-align: center; }
       footer .footerContainer .supportOptions {
         display: flex;
-        margin: 1rem auto;
+        margin: .5rem auto;
         padding: 0;
         text-align: center;
         justify-content: center; }
         footer .footerContainer .supportOptions .supportOptionsItem {
-          margin: .5rem;
+          margin: 5px;
           justify-content: center; }
           footer .footerContainer .supportOptions .supportOptionsItem h5 {
             margin: 1rem 0; }
