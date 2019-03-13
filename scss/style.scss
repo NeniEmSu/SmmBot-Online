@@ -107,58 +107,81 @@ button {
     background-color: #AEE1F7;
 }
 
+// header {
+//     margin-top: 0;
+//     position: relative;
+//     padding: 10px;
+//     float: left;
+//     background: #FFFFFF;
+//     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.25);
+//     border-radius: 0px 0px 10px 10px;
+//     width: 100vw;
+//     border-bottom-left-radius: 10px;
+//     border-bottom-right-radius: 10px;
+//     overflow: hidden;
+
+//     .headerCentered {
+//         float: none;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         font-family: Roboto;
+//         font-style: normal;
+//         font-weight: normal;
+//         line-height: normal;
+//         font-size: 16px;
+//     }
+
+
+//     .login {
+//         font-size: 18px;
+//         float: right;
+//         position: absolute;
+//         top: 50%;
+//         right: 0%;
+//         transform: translate(-50%, -50%);
+//         margin-right: 2.5%;
+//     }
+// }
+
 header {
-    margin-top: 0;
-    position: relative;
-    display: flex;
     padding: 10px;
-    float: left;
     background: #FFFFFF;
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 10px 10px;
-    width: 100vw;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
 
-    div.logo {
-        left: 0%;
-        margin: 1rem 0;
+    .logo {
         margin-left: 2.5%;
     }
 
+    .navbar-toggler {
+        transform: translate(-35%, -0%);
+        -webkit-transform: translate(-35%, -0%);
+        -moz-transform: translate(-35%, -0%);
+        -ms-transform: translate(-35%, -0%);
+        -o-transform: translate(-35%, -0%);
+    }
+
     .headerCentered {
-        float: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         line-height: normal;
         font-size: 16px;
+        transition: ease-in 250ms;
 
-        ul {
-            text-align: center;
-            justify-self: center;
-            justify-content: center;
-
-            li {
-                display: inline;
-                list-style: none;
-                margin-right: 1rem;
-            }
-        }
+        -webkit-transition: ease-in 250ms;
+        -moz-transition: ease-in 250ms;
+        -ms-transition: ease-in 250ms;
+        -o-transition: ease-in 250ms;
     }
 
     .login {
         font-size: 18px;
-        float: right;
-        position: absolute;
-        top: 50%;
-        right: 0%;
-        transform: translate(-50%, -50%);
         margin-right: 2.5%;
     }
 }
@@ -415,6 +438,10 @@ main {
         text-align: center;
         margin: 65px auto 0 auto;
         justify-content: center;
+
+        a {
+            text-decoration: none;
+        }
 
         .socialMedia {
             margin: 1.5rem;
