@@ -413,6 +413,7 @@ main {
               stroke: none;
               stroke-width: 0; }
         main .cards .cardWithImages a.cardSvgButton:hover {
+          color: #ffffff;
           transition: all 500ms ease-in-out; }
           main .cards .cardWithImages a.cardSvgButton:hover path:first-of-type {
             opacity: 0; }

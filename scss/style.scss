@@ -538,6 +538,7 @@ main {
                 }
 
                 &:hover {
+                    color: #ffffff;
                     @include easeOut;
 
                     path {
