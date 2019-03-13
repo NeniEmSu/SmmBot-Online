@@ -201,18 +201,26 @@ header {
         opacity: 1; }
 
 main {
-  width: 90vw;
+  max-width: 90%;
   margin: 0 auto;
+  padding: 0;
   text-align: center;
-  margin: 1.5rem auto;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  justify-items: center;
+  align-content: center; }
+  main section.one h2 {
+    margin-bottom: 60px; }
   main .threeCards {
+    max-width: 100%;
     margin: 1.5rem auto auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 20px;
-    justify-content: center; }
+    grid-gap: 70px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center; }
     main .threeCards .card {
       display: block;
       background-color: #ffffff;
@@ -222,7 +230,8 @@ main {
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
       border-radius: 50px;
       color: #333333;
-      text-align: center; }
+      text-align: center;
+      margin: 0 auto; }
       main .threeCards .card:nth-child(1) .cardParag {
         padding-bottom: 4rem; }
       main .threeCards .card:nth-child(2) .cardParag {
@@ -318,13 +327,15 @@ main {
       box-sizing: border-box;
       border-radius: 30px; }
   main .cards {
-    margin: 1.5rem auto 60px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 55px; }
+    grid-gap: 35px;
+    justify-content: center;
+    justify-items: center; }
     main .cards .cardWithImages {
       background-color: #ffffff;
-      margin: 1rem;
+      margin: 30px 10px;
       min-width: 299px;
       max-width: 299px;
       height: 400px;
@@ -332,7 +343,8 @@ main {
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
       border-radius: 50px;
       color: #333333;
-      text-align: center; }
+      text-align: center;
+      justify-self: center; }
       main .cards .cardWithImages img {
         margin: 3rem 0 0 0; }
       main .cards .cardWithImages h3 {
@@ -587,7 +599,7 @@ body#Услуги footer {
       margin: 0 0 2.5rem 0;
       text-align: center;
       float: none;
-      font-size: 58px; }
+      font-size: 68px; }
     .headerImage a#svgButton {
       position: relative;
       padding: 23px 35px;
@@ -942,13 +954,20 @@ body#Услуги footer {
           margin-top: 2.5rem;
           text-align: center; }
       footer .footerContainer .supportOptions {
-        display: grid;
+        display: flex;
         margin: 1rem auto;
         padding: 0;
         text-align: center;
         justify-content: center; }
+        footer .footerContainer .supportOptions .supportOptionsItem {
+          margin: .5rem;
+          justify-content: center; }
+          footer .footerContainer .supportOptions .supportOptionsItem h5 {
+            margin: 1rem 0; }
+          footer .footerContainer .supportOptions .supportOptionsItem p {
+            text-align: center; }
         footer .footerContainer .supportOptions hr {
-          height: 90%; }
+          display: none; }
   body#Услуги .headerImage {
     background-image: linear-gradient(rgba(44, 94, 142, 0.01), rgba(44, 94, 142, 0.3)), url("../img/Услуги_header_background.png");
     display: block;
@@ -1322,7 +1341,7 @@ body#Услуги footer {
     align-items: center;
     text-align: center; }
     .headerImage h1 {
-      padding-top: calc(100vh - 60vh);
+      padding-top: calc(100vh - 70vh);
       margin: 0 0 2rem 0;
       text-align: center;
       float: none;
@@ -1464,7 +1483,7 @@ body#Услуги footer {
     align-items: center;
     text-align: center; }
     .headerImage h1 {
-      padding-top: calc(100vh - 60vh);
+      padding-top: calc(100vh - 80vh);
       margin: 0 0 2rem 0;
       text-align: center;
       float: none;
@@ -1592,6 +1611,98 @@ body#Услуги footer {
             opacity: 1; }
   section.two h2 {
     font-size: 28px; }
+  section.three .cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0px;
+    justify-content: center;
+    justify-items: center; }
+    section.three .cards .cardWithImages {
+      background-color: #ffffff;
+      margin: 30px auto;
+      min-width: 296px;
+      max-width: 296px;
+      height: 400px;
+      background: #FFFFFF;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+      border-radius: 50px;
+      color: #333333;
+      text-align: center;
+      justify-self: center; }
+      section.three .cards .cardWithImages img {
+        margin: 3rem 0 0 0; }
+      section.three .cards .cardWithImages h3 {
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 16px;
+        color: #333333; }
+      section.three .cards .cardWithImages p.price {
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 30px;
+        color: #333333;
+        padding: 0; }
+      section.three .cards .cardWithImages p.priceExplanation {
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 12px;
+        color: #6D6D6D;
+        margin: 0 auto;
+        padding: 0; }
+      section.three .cards .cardWithImages p {
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 12px;
+        text-align: center;
+        color: #6D6D6D; }
+      section.three .cards .cardWithImages a.cardSvgButton {
+        display: block;
+        color: #557C8C;
+        font-size: 15px;
+        position: relative;
+        margin: 10px auto;
+        padding: 14px 37px;
+        border-radius: 37px;
+        -webkit-border-radius: 37px;
+        -moz-border-radius: 37px;
+        -ms-border-radius: 37px;
+        -o-border-radius: 37px;
+        position: relative;
+        z-index: 0;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        text-align: center;
+        text-decoration: none; }
+        section.three .cards .cardWithImages a.cardSvgButton .icon {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          height: 100%;
+          width: 100%;
+          z-index: -1; }
+          section.three .cards .cardWithImages a.cardSvgButton .icon path {
+            transition: opacity 0.4s ease; }
+            section.three .cards .cardWithImages a.cardSvgButton .icon path:first-of-type {
+              fill: transparent;
+              stroke: url(#linearGradient-1);
+              stroke-width: 3;
+              opacity: 1; }
+            section.three .cards .cardWithImages a.cardSvgButton .icon path.icon--plain {
+              opacity: 0;
+              stroke: none;
+              stroke-width: 0; }
+        section.three .cards .cardWithImages a.cardSvgButton:hover {
+          transition: all 500ms ease-in-out; }
+          section.three .cards .cardWithImages a.cardSvgButton:hover path:first-of-type {
+            opacity: 0; }
+          section.three .cards .cardWithImages a.cardSvgButton:hover path.icon--plain {
+            opacity: 1; }
   footer {
     text-align: center; }
   .headerImage h1 {
@@ -1703,7 +1814,7 @@ body#Услуги footer {
   main h2 {
     font-size: 30px; }
   body#Услуги .headerImage h1 {
-    padding-top: calc(100vh - 80vh);
+    padding-top: calc(100vh - 90vh);
     margin: 0 50px 0 0;
     font-size: 38px;
     float: right;
@@ -1802,7 +1913,7 @@ body#Услуги footer {
         color: lightgray;
         transform: scale(1.1); }
   .headerImage h1 {
-    padding-top: calc(100vh - 80vh);
+    padding-top: calc(100vh - 90vh);
     margin: 0 50px 0 0;
     font-size: 38px;
     float: right;
@@ -1815,7 +1926,7 @@ body#Услуги footer {
   main h2 {
     font-size: 30px; }
   body#Услуги .headerImage h1 {
-    padding-top: calc(100vh - 80vh);
+    padding-top: calc(100vh - 99vh);
     margin: 0 50px 0 0;
     font-size: 38px;
     float: right;
@@ -1825,6 +1936,7 @@ body#Услуги footer {
   body#Услуги .headerImage a#svgButton {
     margin: 18% 0 0 60px;
     position: relative;
+    font-size: 28px;
     z-index: 0;
     float: left; }
   body#Услуги main h2 {
@@ -1915,7 +2027,7 @@ body#Услуги footer {
         color: lightgray;
         transform: scale(1.1); }
   .headerImage h1 {
-    padding-top: calc(100vh - 90vh);
+    padding-top: calc(100vh - 95vh);
     margin: 0 10px 0 0;
     font-size: 30px;
     float: right;

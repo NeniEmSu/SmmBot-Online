@@ -249,19 +249,32 @@ header {
 }
 
 main {
-    width: 90vw;
+    max-width: 90%;
     margin: 0 auto;
+    padding: 0;
     text-align: center;
-    margin: 1.5rem auto;
     justify-content: center;
     align-items: center;
+    justify-items: center;
+    align-content: center;
+
+    section.one {
+        h2 {
+            margin-bottom: 60px;
+        }
+    }
 
     .threeCards {
+        max-width: 100%;
         margin: 1.5rem auto auto 0;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        grid-gap: 20px;
+        grid-gap: 70px;
         justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+
 
         .card {
             display: block;
@@ -273,6 +286,7 @@ main {
             border-radius: 50px;
             color: #333333;
             text-align: center;
+            margin: 0 auto;
 
             &:nth-child(1) {
                 .cardParag {
@@ -417,14 +431,16 @@ main {
     }
 
     .cards {
-        margin: 1.5rem auto 60px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 55px;
+        grid-gap: 35px;
+        justify-content: center;
+        justify-items: center;
 
         .cardWithImages {
             background-color: #ffffff;
-            margin: 1rem;
+            margin: 30px 10px;
             min-width: 299px;
             max-width: 299px;
             height: 400px;
@@ -433,6 +449,7 @@ main {
             border-radius: 50px;
             color: #333333;
             text-align: center;
+            justify-self: center;
 
             img {
                 margin: 3rem 0 0 0;
