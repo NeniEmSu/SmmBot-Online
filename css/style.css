@@ -665,8 +665,7 @@ body#Услуги footer {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .logo {
     position: absolute;
-    top: 0;
-    margin-top: 16px; }
+    top: 0; }
   nav ul {
     max-height: 0px;
     background: #f3f3f3; }
@@ -786,8 +785,7 @@ body#Услуги footer {
 @media screen and (max-width: 768px) {
   .logo {
     position: absolute;
-    top: 0;
-    margin-top: 16px; }
+    top: 0; }
   nav ul {
     max-height: 0px;
     background: #f3f3f3; }
@@ -1054,8 +1052,7 @@ body#Услуги footer {
 @media screen and (max-width: 500px) {
   .logo {
     position: absolute;
-    top: 0;
-    margin-top: 16px; }
+    top: 0; }
   nav ul {
     max-height: 0px;
     background: #f3f3f3; }
@@ -1225,8 +1222,7 @@ body#Услуги footer {
 @media screen and (max-width: 400px) {
   .logo {
     position: absolute;
-    top: 0;
-    margin-top: 16px; }
+    top: 0; }
   nav ul {
     max-height: 0px;
     background: #f3f3f3; }
@@ -1305,8 +1301,7 @@ body#Услуги footer {
 @media screen and (max-width: 360px) {
   .logo {
     position: absolute;
-    top: 0;
-    margin-top: 16px; }
+    top: 0; }
   nav ul {
     max-height: 0px;
     background: #f3f3f3; }
@@ -1564,8 +1559,7 @@ body#Услуги footer {
 @media screen and (max-width: 720px) and (orientation: landscape) {
   .logo {
     position: absolute;
-    top: 0;
-    margin-top: 16px; }
+    top: 0; }
   nav ul {
     max-height: 0px;
     background: #f3f3f3; }
@@ -1612,8 +1606,7 @@ body#Услуги footer {
 @media screen and (max-width: 980px) and (orientation: landscape) {
   .logo {
     position: absolute;
-    top: 0;
-    margin-top: 16px; }
+    top: 0; }
   nav ul {
     max-height: 0px;
     background: #f3f3f3; }
@@ -1661,8 +1654,7 @@ body#Услуги footer {
 @media screen and (max-width: 540px) and (orientation: landscape) {
   .logo {
     position: absolute;
-    top: 0;
-    margin-top: 16px; }
+    top: 0; }
   nav ul {
     max-height: 0px;
     background: #f3f3f3; }
@@ -1680,8 +1672,7 @@ body#Услуги footer {
     display: block; }
   .logo {
     position: absolute;
-    top: 0;
-    margin-top: 16px; }
+    top: 0; }
   nav ul {
     max-height: 0px;
     background: #f3f3f3; }
