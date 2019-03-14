@@ -89,11 +89,12 @@ a {
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
-        color: #2C5E8E;
+        color: rgb(10, 122, 167);
     }
 
     &.active {
-        font-style: bold;
+        color: #2C5E8E;
+        text-transform: capitalize;
     }
 }
 
@@ -766,9 +767,19 @@ body#Услуги {
             margin: 0;
             margin-top: 6rem;
             justify-self: center;
+            transition: ease-in-out 300ms;
+            -webkit-transition: ease-in-out 300ms;
+            -moz-transition: ease-in-out 300ms;
+            -ms-transition: ease-in-out 300ms;
+            -o-transition: ease-in-out 300ms;
 
             &:hover {
-                opacity: .95;
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                color: rgb(255, 255, 255);
             }
         }
     }
@@ -790,6 +801,21 @@ body#Услуги {
             -ms-border-radius: 50px;
             -o-border-radius: 50px;
             margin: 0;
+
+            transition: ease-in-out 300ms;
+            -webkit-transition: ease-in-out 300ms;
+            -moz-transition: ease-in-out 300ms;
+            -ms-transition: ease-in-out 300ms;
+            -o-transition: ease-in-out 300ms;
+
+            &:hover {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                color: rgb(254, 255, 255);
+            }
         }
 
         section.one {
