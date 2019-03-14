@@ -11,6 +11,38 @@
 }
 
 @include mediaLg {
+
+    .logo {
+        position: absolute;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #f3f3f3;
+    }
+
+    nav.black ul {
+        background: #f4f4f4;
+        overflow-y: scroll;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
     .headerImage {
         display: block;
         justify-content: center;
@@ -93,7 +125,7 @@
 
     body#Услуги {
         .headerImage {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/Услуги_header_background.png");
+            background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/Услуги_header_background.png");
             display: block;
             justify-content: center;
             align-items: center;
@@ -169,127 +201,36 @@
 }
 
 @include mediaMd {
-    .menu-btn {
+
+    .logo {
         position: absolute;
-        z-index: 3;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 16px;
-        cursor: pointer;
-        @include easeOut;
-
-        .btn-line {
-            width: 28px;
-            height: 3px;
-            margin: 0 0 5px 0;
-            background: black;
-            @include easeOut;
-        }
-
-        // rotate into x with menu lines
-        &.close {
-            .btn-line {
-
-                //Line 1 -rotate
-                &:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
-                }
-
-                //Line 2 -Hide
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                //Line 3 -rotate
-                &:nth-child(3) {
-                    transform: rotate(-45deg) translate(7px, -6px);
-                }
-            }
-        }
+        top: 0;
+        margin-top: 16px;
     }
 
-    // Menu Overlay
-    .menu {
+    nav ul {
+        max-height: 0px;
+        background: #f3f3f3;
+    }
+
+    nav.black ul {
+        background: #f4f4f4;
+        overflow-y: scroll;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
         width: 100%;
-        opacity: 0.9;
-        visibility: hidden;
+        padding: 20px;
+        text-align: center;
+    }
 
-        &.show {
-            visibility: visible;
-            position: fixed;
-            z-index: 2;
-            height: auto;
-            margin-top: 10%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        &-nav {
-            display: block;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            float: none;
-            width: 100%;
-            height: auto;
-            overflow-x: hidden;
-        }
-
-        &-nav {
-            margin: 0;
-            padding: 0;
-            background: darken($primary-color, 5);
-            list-style: none;
-            transform: translate3d(0, -100%, 0);
-            @include easeOut;
-
-            &.show {
-                transform: translate3d(0, 0, 0);
-                -webkit-transform: translate3d(0, 0, 0);
-                -moz-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                -o-transform: translate3d(0, 0, 0);
-            }
-        }
-
-        .nav-item {
-            display: block;
-            padding: 30px;
-            transform: translate3d(600px, 0, 0);
-            @include easeOut;
-
-            &.show {
-                //slide from right
-                transform: translate3d(0, 0, 0);
-            }
-
-            &.current>a {
-                color: #72A5BA;
-            }
-        }
-
-        .nav-link {
-            display: inline-block;
-            position: relative;
-            font-size: 32px;
-            text-transform: uppercase;
-            padding: 1rem 0;
-            font-weight: 300;
-            color: white;
-            text-decoration: none;
-            @include easeOut;
-
-            &:hover {
-                color: lightgray;
-                transform: scale(1.1);
-            }
-        }
+    .menu-icon {
+        display: block;
     }
 
     .headerImage {
@@ -598,7 +539,7 @@
 
     body#Услуги {
         .headerImage {
-            background-image: linear-gradient(rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)), url("../img/Услуги_header_background.png");
+            background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("../img/Услуги_header_background.png");
             display: block;
             justify-content: center;
             align-items: center;
@@ -674,126 +615,35 @@
 }
 
 @include mediaSm {
-    .menu-btn {
+    .logo {
         position: absolute;
-        z-index: 3;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 16px;
-        cursor: pointer;
-        @include easeOut;
-
-        .btn-line {
-            width: 28px;
-            height: 3px;
-            margin: 0 0 5px 0;
-            background: black;
-            @include easeOut;
-        }
-
-        // rotate into x with menu lines
-        &.close {
-            .btn-line {
-
-                //Line 1 -rotate
-                &:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
-                }
-
-                //Line 2 -Hide
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                //Line 3 -rotate
-                &:nth-child(3) {
-                    transform: rotate(-45deg) translate(7px, -6px);
-                }
-            }
-        }
+        top: 0;
+        margin-top: 16px;
     }
 
-    // Menu Overlay
-    .menu {
-        opacity: 0.9;
-        visibility: hidden;
+    nav ul {
+        max-height: 0px;
+        background: #f3f3f3;
+    }
 
-        &.show {
-            visibility: visible;
-            position: fixed;
-            z-index: 2;
-            height: auto;
-            margin-top: 10%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    nav.black ul {
+        background: #f4f4f4;
+        overflow-y: scroll;
+    }
 
-        &-nav {
-            display: block;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            float: none;
-            width: 100%;
-            height: auto;
-            overflow-x: hidden;
-        }
+    .showing {
+        max-height: 34em;
+    }
 
-        &-nav {
-            margin: 0;
-            padding: 0;
-            background: darken($primary-color, 5);
-            list-style: none;
-            transform: translate3d(0, -100%, 0);
-            @include easeOut;
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
 
-            &.show {
-                transform: translate3d(0, 0, 0);
-                -webkit-transform: translate3d(0, 0, 0);
-                -moz-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                -o-transform: translate3d(0, 0, 0);
-            }
-        }
-
-        .nav-item {
-            display: block;
-            font-size: 18px;
-            transform: translate3d(600px, 0, 0);
-            @include easeOut;
-
-            &.show {
-                //slide from right
-                transform: translate3d(0, 0, 0);
-            }
-
-            &.current>a {
-                color: #72A5BA;
-            }
-        }
-
-        .nav-link {
-            display: inline-block;
-            position: relative;
-            font-size: 16px;
-            text-transform: uppercase;
-            padding: 1rem 0;
-            font-weight: 300;
-            color: white;
-            text-decoration: none;
-            @include easeOut;
-
-            &:hover {
-                color: lightgray;
-                transform: scale(1.1);
-            }
-        }
+    .menu-icon {
+        display: block;
     }
 
     .headerImage {
@@ -801,6 +651,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+
 
         h1 {
             padding-top: 14rem;
@@ -961,7 +812,7 @@
 
     body#Услуги {
         .headerImage {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/Услуги_header_background.png");
+            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/Услуги_header_background.png");
             display: block;
             justify-content: center;
             align-items: center;
@@ -1037,127 +888,35 @@
 }
 
 @include mediaXSm {
-    .menu-btn {
+    .logo {
         position: absolute;
-        z-index: 3;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 16px;
-        cursor: pointer;
-        @include easeOut;
-
-        .btn-line {
-            width: 28px;
-            height: 3px;
-            margin: 0 0 5px 0;
-            background: black;
-            @include easeOut;
-        }
-
-        // rotate into x with menu lines
-        &.close {
-            .btn-line {
-
-                //Line 1 -rotate
-                &:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
-                }
-
-                //Line 2 -Hide
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                //Line 3 -rotate
-                &:nth-child(3) {
-                    transform: rotate(-45deg) translate(7px, -6px);
-                }
-            }
-        }
+        top: 0;
+        margin-top: 16px;
     }
 
-    // Menu Overlay
-    .menu {
-        opacity: 0.9;
-        visibility: hidden;
+    nav ul {
+        max-height: 0px;
+        background: #f3f3f3;
+    }
 
-        &.show {
-            visibility: visible;
-            position: fixed;
-            z-index: 2;
-            height: auto;
-            margin-top: 10%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    nav.black ul {
+        background: #f4f4f4;
+        overflow-y: scroll;
+    }
 
-        &-nav {
-            display: block;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            float: none;
-            width: 100%;
-            height: auto;
-            overflow-x: hidden;
-        }
+    .showing {
+        max-height: 34em;
+    }
 
-        &-nav {
-            margin: 0;
-            padding: 0;
-            background: darken($primary-color, 5);
-            list-style: none;
-            transform: translate3d(0, -100%, 0);
-            @include easeOut;
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
 
-            &.show {
-                transform: translate3d(0, 0, 0);
-                -webkit-transform: translate3d(0, 0, 0);
-                -moz-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                -o-transform: translate3d(0, 0, 0);
-            }
-        }
-
-        .nav-item {
-            display: block;
-            padding: 20px;
-            font-size: 22px;
-            transform: translate3d(600px, 0, 0);
-            @include easeOut;
-
-            &.show {
-                //slide from right
-                transform: translate3d(0, 0, 0);
-            }
-
-            &.current>a {
-                color: #72A5BA;
-            }
-        }
-
-        .nav-link {
-            display: inline-block;
-            position: relative;
-            font-size: 16px;
-            text-transform: uppercase;
-            padding: 1rem 0;
-            font-weight: 300;
-            color: white;
-            text-decoration: none;
-            @include easeOut;
-
-            &:hover {
-                color: lightgray;
-                transform: scale(1.1);
-            }
-        }
+    .menu-icon {
+        display: block;
     }
 
     .headerImage {
@@ -1259,126 +1018,35 @@
 }
 
 @include mediaXXSm {
-    .menu-btn {
+    .logo {
         position: absolute;
-        z-index: 3;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 16px;
-        cursor: pointer;
-        @include easeOut;
-
-        .btn-line {
-            width: 28px;
-            height: 3px;
-            margin: 0 0 5px 0;
-            background: black;
-            @include easeOut;
-        }
-
-        // rotate into x with menu lines
-        &.close {
-            .btn-line {
-
-                //Line 1 -rotate
-                &:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
-                }
-
-                //Line 2 -Hide
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                //Line 3 -rotate
-                &:nth-child(3) {
-                    transform: rotate(-45deg) translate(7px, -6px);
-                }
-            }
-        }
+        top: 0;
+        margin-top: 16px;
     }
 
-    // Menu Overlay
-    .menu {
-        opacity: 0.9;
-        visibility: hidden;
+    nav ul {
+        max-height: 0px;
+        background: #f3f3f3;
+    }
 
-        &.show {
-            visibility: visible;
-            position: fixed;
-            z-index: 2;
-            height: auto;
-            margin-top: calc(100vh - 90vh);
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    nav.black ul {
+        background: #f4f4f4;
+        overflow-y: scroll;
+    }
 
-        &-nav {
-            display: block;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            float: none;
-            width: 100%;
-            height: auto;
-            overflow-x: hidden;
-        }
+    .showing {
+        max-height: 34em;
+    }
 
-        &-nav {
-            margin: 0;
-            padding: 0;
-            background: darken($primary-color, 5);
-            list-style: none;
-            transform: translate3d(0, -100%, 0);
-            @include easeOut;
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
 
-            &.show {
-                transform: translate3d(0, 0, 0);
-                -webkit-transform: translate3d(0, 0, 0);
-                -moz-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                -o-transform: translate3d(0, 0, 0);
-            }
-        }
-
-        .nav-item {
-            display: block;
-            padding: 15px;
-            transform: translate3d(600px, 0, 0);
-            @include easeOut;
-
-            &.show {
-                //slide from right
-                transform: translate3d(0, 0, 0);
-            }
-
-            &.current>a {
-                color: #72A5BA;
-            }
-        }
-
-        .nav-link {
-            display: inline-block;
-            position: relative;
-            font-size: 16px;
-            text-transform: uppercase;
-            padding: 1rem 0;
-            font-weight: 300;
-            color: white;
-            text-decoration: none;
-            @include easeOut;
-
-            &:hover {
-                color: lightgray;
-                transform: scale(1.1);
-            }
-        }
+    .menu-icon {
+        display: block;
     }
 
     .headerImage {
@@ -1745,128 +1413,35 @@
 }
 
 @include mediaLandscape {
-    .menu-btn {
+    .logo {
         position: absolute;
-        z-index: 3;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 16px;
-        cursor: pointer;
-        @include easeOut;
-
-        .btn-line {
-            width: 28px;
-            height: 3px;
-            margin: 0 0 5px 0;
-            background: black;
-            @include easeOut;
-        }
-
-        // rotate into x with menu lines
-        &.close {
-            .btn-line {
-
-                //Line 1 -rotate
-                &:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
-                }
-
-                //Line 2 -Hide
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                //Line 3 -rotate
-                &:nth-child(3) {
-                    transform: rotate(-45deg) translate(7px, -6px);
-                }
-            }
-        }
+        top: 0;
+        margin-top: 16px;
     }
 
-    // Menu Overlay
-    .menu {
+    nav ul {
+        max-height: 0px;
+        background: #f3f3f3;
+    }
+
+    nav.black ul {
+        background: #f4f4f4;
+        overflow-y: scroll;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
         width: 100%;
-        opacity: 0.9;
-        visibility: hidden;
+        padding: 20px;
+        text-align: center;
+    }
 
-        &.show {
-            visibility: visible;
-            position: fixed;
-            z-index: 2;
-            height: auto;
-            margin-top: 10%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        &-nav {
-            display: block;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            float: none;
-            width: 100%;
-            height: auto;
-            overflow-x: hidden;
-        }
-
-        &-nav {
-            margin: 0;
-            padding: 0;
-            background: darken($primary-color, 5);
-            list-style: none;
-            transform: translate3d(0, -100%, 0);
-            @include easeOut;
-
-            &.show {
-                transform: translate3d(0, 0, 0);
-                -webkit-transform: translate3d(0, 0, 0);
-                -moz-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                -o-transform: translate3d(0, 0, 0);
-            }
-        }
-
-        .nav-item {
-            display: inline-block;
-            padding: 20px;
-            font-size: 32px;
-            transform: translate3d(600px, 0, 0);
-            @include easeOut;
-
-            &.show {
-                //slide from right
-                transform: translate3d(0, 0, 0);
-            }
-
-            &.current>a {
-                color: #72A5BA;
-            }
-        }
-
-        .nav-link {
-            display: inline-block;
-            position: relative;
-            font-size: 16px;
-            text-transform: uppercase;
-            padding: 1rem 0;
-            font-weight: 300;
-            color: white;
-            text-decoration: none;
-            @include easeOut;
-
-            &:hover {
-                color: lightgray;
-                transform: scale(1.1);
-            }
-        }
+    .menu-icon {
+        display: block;
     }
 
     .headerImage {
@@ -1922,128 +1497,35 @@
 }
 
 @include mediaXlLandscape {
-    .menu-btn {
+    .logo {
         position: absolute;
-        z-index: 3;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 16px;
-        cursor: pointer;
-        @include easeOut;
-
-        .btn-line {
-            width: 28px;
-            height: 3px;
-            margin: 0 0 5px 0;
-            background: black;
-            @include easeOut;
-        }
-
-        // rotate into x with menu lines
-        &.close {
-            .btn-line {
-
-                //Line 1 -rotate
-                &:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
-                }
-
-                //Line 2 -Hide
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                //Line 3 -rotate
-                &:nth-child(3) {
-                    transform: rotate(-45deg) translate(7px, -6px);
-                }
-            }
-        }
+        top: 0;
+        margin-top: 16px;
     }
 
-    // Menu Overlay
-    .menu {
+    nav ul {
+        max-height: 0px;
+        background: #f3f3f3;
+    }
+
+    nav.black ul {
+        background: #f4f4f4;
+        overflow-y: scroll;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
         width: 100%;
-        opacity: 0.9;
-        visibility: hidden;
+        padding: 20px;
+        text-align: center;
+    }
 
-        &.show {
-            visibility: visible;
-            position: fixed;
-            z-index: 2;
-            height: auto;
-            margin-top: 10%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        &-nav {
-            display: block;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            float: none;
-            width: 100%;
-            height: auto;
-            overflow-x: hidden;
-        }
-
-        &-nav {
-            margin: 0;
-            padding: 0;
-            background: darken($primary-color, 5);
-            list-style: none;
-            transform: translate3d(0, -100%, 0);
-            @include easeOut;
-
-            &.show {
-                transform: translate3d(0, 0, 0);
-                -webkit-transform: translate3d(0, 0, 0);
-                -moz-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                -o-transform: translate3d(0, 0, 0);
-            }
-        }
-
-        .nav-item {
-            display: inline-block;
-            padding: 20px;
-            font-size: 32px;
-            transform: translate3d(600px, 0, 0);
-            @include easeOut;
-
-            &.show {
-                //slide from right
-                transform: translate3d(0, 0, 0);
-            }
-
-            &.current>a {
-                color: #72A5BA;
-            }
-        }
-
-        .nav-link {
-            display: inline-block;
-            position: relative;
-            font-size: 16px;
-            text-transform: uppercase;
-            padding: 1rem 0;
-            font-weight: 300;
-            color: white;
-            text-decoration: none;
-            @include easeOut;
-
-            &:hover {
-                color: lightgray;
-                transform: scale(1.1);
-            }
-        }
+    .menu-icon {
+        display: block;
     }
 
     .headerImage {
@@ -2100,128 +1582,67 @@
 }
 
 @include mediaSmLandscape {
-    .menu-btn {
+    .logo {
         position: absolute;
-        z-index: 3;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 16px;
-        cursor: pointer;
-        @include easeOut;
-
-        .btn-line {
-            width: 28px;
-            height: 3px;
-            margin: 0 0 5px 0;
-            background: black;
-            @include easeOut;
-        }
-
-        // rotate into x with menu lines
-        &.close {
-            .btn-line {
-
-                //Line 1 -rotate
-                &:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
-                }
-
-                //Line 2 -Hide
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-
-                //Line 3 -rotate
-                &:nth-child(3) {
-                    transform: rotate(-45deg) translate(7px, -6px);
-                }
-            }
-        }
+        top: 0;
+        margin-top: 16px;
     }
 
-    // Menu Overlay
-    .menu {
+    nav ul {
+        max-height: 0px;
+        background: #f3f3f3;
+    }
+
+    nav.black ul {
+        background: #f4f4f4;
+        overflow-y: scroll;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
         width: 100%;
-        opacity: 0.9;
-        visibility: hidden;
+        padding: 20px;
+        text-align: center;
+    }
 
-        &.show {
-            visibility: visible;
-            position: fixed;
-            z-index: 2;
-            height: auto;
-            margin-top: 10%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    .menu-icon {
+        display: block;
+    }
 
-        &-nav {
-            display: block;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            float: none;
-            width: 100%;
-            height: auto;
-            overflow-x: hidden;
-        }
+    .logo {
+        position: absolute;
+        ;
+        top: 0;
+        margin-top: 16px;
+    }
 
-        &-nav {
-            margin: 0;
-            padding: 0;
-            background: darken($primary-color, 5);
-            list-style: none;
-            transform: translate3d(0, -100%, 0);
-            @include easeOut;
+    nav ul {
+        max-height: 0px;
+        background: #f3f3f3;
+    }
 
-            &.show {
-                transform: translate3d(0, 0, 0);
-                -webkit-transform: translate3d(0, 0, 0);
-                -moz-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                -o-transform: translate3d(0, 0, 0);
-            }
-        }
+    nav.black ul {
+        background: #f4f4f4;
+        overflow-y: scroll;
+    }
 
-        .nav-item {
-            display: inline-block;
-            padding: 20px;
-            font-size: 32px;
-            transform: translate3d(600px, 0, 0);
-            @include easeOut;
+    .showing {
+        max-height: 34em;
+    }
 
-            &.show {
-                //slide from right
-                transform: translate3d(0, 0, 0);
-            }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
 
-            &.current>a {
-                color: #72A5BA;
-            }
-        }
-
-        .nav-link {
-            display: inline-block;
-            position: relative;
-            font-size: 16px;
-            text-transform: uppercase;
-            padding: 1rem 0;
-            font-weight: 300;
-            color: white;
-            text-decoration: none;
-            @include easeOut;
-
-            &:hover {
-                color: lightgray;
-                transform: scale(1.1);
-            }
-        }
+    .menu-icon {
+        display: block;
     }
 
     .headerImage {
@@ -2278,5 +1699,3 @@
         }
     }
 }
-
-// linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/Услуги_header_background.png");

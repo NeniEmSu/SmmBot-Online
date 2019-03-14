@@ -12,88 +12,56 @@
     <title>Услуги | SMMBot Online</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body id="Услуги">
-    <!-- <header>
-        <div class="logo"><a href="index"><img src="img/logo_blue.png" alt="smmbot online logo"></a></div>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-        <nav class="menu headerCentered">
 
-            <ul class="menu-nav">
-                <li class="nav-item current">
-                    <a href="index" class="nav-link">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Услуги" class="nav-link">Услуги</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Бизнес</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Скидки </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Партнерка</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Поддержка</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="login"><a href="">login <span><i class="far fa-user-circle"></i></span></a></div>
+    <header>
 
+        <nav>
 
-    </header> -->
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
 
-    <header class="navbar navbar-light bg-light ">
+            <div class="logo1">
+                <a class="navbar-brand logo" href="index">
+                    <img src="img/logo_blue.png" alt="smmbot online logo">
+                </a>
+            </div>
 
-        <a class="navbar-brand logo" href="index">
-            <img src="img/logo_blue.png" alt="smmbot online logo">
-        </a>
-        <nav class="navbar-expand-lg headerCentered">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse text-center navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index">Главная</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Услуги">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Бизнес</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Скидки </a>
-                    </li class="nav-item">
+            <div class="menu">
+                <ul>
                     <li>
-                        <a class="nav-link" href="#">Партнерка</a>
-                    </li class="nav-item">
+                        <a href="index">Главная</a>
+                    </li>
                     <li>
-                        <a class="nav-link" href="#">Поддержка</a>
+                        <a href="Услуги">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#">Бизнес</a>
+                    </li>
+                    <li>
+                        <a href="#">Скидки </a>
+                    </li>
+                    <li>
+                        <a href="#">Партнерка</a>
+                    </li>
+                    <li>
+                        <a href="#">Поддержка</a>
+                    </li>
+                    <li class="login">
+                        <a href="#">login <span><i class="far fa-user-circle"></i></span></a>
                     </li>
                 </ul>
+
             </div>
         </nav>
-        <a class="login" href="login">login <span><i class="far fa-user-circle"></i></span></a>
-
 
     </header>
-
     <div class="headerImage">
         <div class="headerImageInner">
             <h1>Сделай <br>
@@ -327,6 +295,14 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+    </script>
 </body>
 
 </html>
