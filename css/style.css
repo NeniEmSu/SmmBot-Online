@@ -133,6 +133,11 @@ nav {
   overflow: hidden; }
 
 nav ul {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #333333;
   line-height: 50px;
   list-style: none;
   background: white;
@@ -145,8 +150,14 @@ nav ul {
   transition: 1s; }
 
 .login {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #333333;
   float: right;
-  margin-right: 2.5%; }
+  margin-right: 2.5%;
+  font-size: 18px; }
 
 nav.black ul {
   background: #ffffff; }
