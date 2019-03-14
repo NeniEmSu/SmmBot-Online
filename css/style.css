@@ -837,9 +837,10 @@ body#Услуги footer {
       display: block;
       background-color: #ffffff;
       margin: 1.5rem auto;
-      min-width: 310px;
+      min-width: 299px;
       max-width: 360px;
       height: 400px;
+      max-height: 405px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
       border-radius: 50px;
       color: #333333;
