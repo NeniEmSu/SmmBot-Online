@@ -907,6 +907,7 @@
 
     .showing {
         max-height: 34em;
+        overflow-y: scroll;
     }
 
     nav ul li {

@@ -1229,7 +1229,8 @@ body#Услуги footer {
     background: #f4f4f4;
     overflow-y: scroll; }
   .showing {
-    max-height: 34em; }
+    max-height: 34em;
+    overflow-y: scroll; }
   nav ul li {
     box-sizing: border-box;
     width: 100%;
