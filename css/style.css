@@ -110,7 +110,7 @@ button {
   position: fixed;
   width: 100%;
   height: 100vh;
-  z-index: 1;
+  z-index: 2;
   overflow: visible;
   background: #000 url("../img/preloader.gif") no-repeat center center; }
 
@@ -390,7 +390,10 @@ main {
     grid-gap: 35px;
     justify-content: center;
     justify-items: center; }
-    main .cards .cardWithImages {
+    main .cards .owl-carousel .owl-item img {
+      display: inline;
+      width: 100%; }
+    main .cards .owl-carousel.owl-theme .item .cardWithImages {
       background-color: #ffffff;
       margin: 30px 10px;
       min-width: 299px;
@@ -402,22 +405,22 @@ main {
       color: #333333;
       text-align: center;
       justify-self: center; }
-      main .cards .cardWithImages img {
+      main .cards .owl-carousel.owl-theme .item .cardWithImages img {
         margin: 3rem 0 0 0; }
-      main .cards .cardWithImages h3 {
+      main .cards .owl-carousel.owl-theme .item .cardWithImages h3 {
         font-style: normal;
         font-weight: normal;
         line-height: normal;
         font-size: 16px;
         color: #333333; }
-      main .cards .cardWithImages p.price {
+      main .cards .owl-carousel.owl-theme .item .cardWithImages p.price {
         font-style: normal;
         font-weight: normal;
         line-height: normal;
         font-size: 30px;
         color: #333333;
         padding: 0; }
-      main .cards .cardWithImages p.priceExplanation {
+      main .cards .owl-carousel.owl-theme .item .cardWithImages p.priceExplanation {
         font-style: normal;
         font-weight: normal;
         line-height: normal;
@@ -425,14 +428,14 @@ main {
         color: #6D6D6D;
         margin: 0 auto;
         padding: 0; }
-      main .cards .cardWithImages p {
+      main .cards .owl-carousel.owl-theme .item .cardWithImages p {
         font-style: normal;
         font-weight: normal;
         line-height: normal;
         font-size: 12px;
         text-align: center;
         color: #6D6D6D; }
-      main .cards .cardWithImages a.cardSvgButton {
+      main .cards .owl-carousel.owl-theme .item .cardWithImages a.cardSvgButton {
         display: block;
         color: #557C8C;
         font-size: 15px;
@@ -451,30 +454,30 @@ main {
         line-height: normal;
         text-align: center;
         text-decoration: none; }
-        main .cards .cardWithImages a.cardSvgButton .icon {
+        main .cards .owl-carousel.owl-theme .item .cardWithImages a.cardSvgButton .icon {
           position: absolute;
           top: 0px;
           left: 0px;
           height: 100%;
           width: 100%;
           z-index: -1; }
-          main .cards .cardWithImages a.cardSvgButton .icon path {
+          main .cards .owl-carousel.owl-theme .item .cardWithImages a.cardSvgButton .icon path {
             transition: opacity 0.4s ease; }
-            main .cards .cardWithImages a.cardSvgButton .icon path:first-of-type {
+            main .cards .owl-carousel.owl-theme .item .cardWithImages a.cardSvgButton .icon path:first-of-type {
               fill: transparent;
               stroke: url(#linearGradient-1);
               stroke-width: 3;
               opacity: 1; }
-            main .cards .cardWithImages a.cardSvgButton .icon path.icon--plain {
+            main .cards .owl-carousel.owl-theme .item .cardWithImages a.cardSvgButton .icon path.icon--plain {
               opacity: 0;
               stroke: none;
               stroke-width: 0; }
-        main .cards .cardWithImages a.cardSvgButton:hover {
+        main .cards .owl-carousel.owl-theme .item .cardWithImages a.cardSvgButton:hover {
           color: #ffffff;
           transition: all 500ms ease-in-out; }
-          main .cards .cardWithImages a.cardSvgButton:hover path:first-of-type {
+          main .cards .owl-carousel.owl-theme .item .cardWithImages a.cardSvgButton:hover path:first-of-type {
             opacity: 0; }
-          main .cards .cardWithImages a.cardSvgButton:hover path.icon--plain {
+          main .cards .owl-carousel.owl-theme .item .cardWithImages a.cardSvgButton:hover path.icon--plain {
             opacity: 1; }
 
 footer {
