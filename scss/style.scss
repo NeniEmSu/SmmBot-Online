@@ -128,6 +128,15 @@ button {
     background-color: #AEE1F7;
 }
 
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: visible;
+    background: #000 url('../img/preloader.gif') no-repeat center center;
+}
+
 header {
     height: 80px;
     width: 100%;
