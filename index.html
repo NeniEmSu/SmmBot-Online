@@ -36,7 +36,7 @@
 
 <body>
 
-    <div id="preloader"></div>
+    <!-- <div id="preloader"></div> -->
     <div id="content">
         <header>
 
@@ -269,7 +269,7 @@
                 <div class="cards">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
-                            <div class="cardWithImages">
+                            <div class="cardWithImages card__hover">
 
                                 <img style="object-fit: contain;" src="img/subscribers.png"
                                     alt="Image showing no of subscribers in channel">
@@ -299,7 +299,7 @@
                         </div>
 
                         <div class="item">
-                            <div class="cardWithImages">
+                            <div class="cardWithImages card__hover">
                                 <img src="img/instaNotification.png"
                                     alt="Image showing notification for instagram following">
                                 <hr>
@@ -329,7 +329,7 @@
                         </div>
 
                         <div class="item">
-                            <div class="cardWithImages">
+                            <div class="cardWithImages card__hover">
                                 <img src="img/instaFollowers.png"
                                     alt="Image showing instagram followers, post and following.">
                                 <hr>
@@ -359,7 +359,7 @@
                         </div>
 
                         <div class="item">
-                            <div class="cardWithImages">
+                            <div class="cardWithImages card__hover">
                                 <img src="img/instaComments.png" alt="Image showing instagram comments.">
                                 <hr>
                                 <div class="contained-text">
@@ -387,7 +387,7 @@
                         </div>
 
                         <div class="item">
-                            <div class="cardWithImages">
+                            <div class="cardWithImages card__hover">
                                 <img src="img/likes.jpg" alt="Комментарии" title="Комментарии" width="299px"
                                     height="120px">
                                 <hr>
@@ -417,7 +417,7 @@
                         </div>
 
                         <div class="item">
-                            <div class="cardWithImages">
+                            <div class="cardWithImages card__hover">
                                 <img src="img/insta1.jpg" alt="Просмотры видео (офферы)"
                                     title="Просмотры видео (офферы)">
                                 <hr>
@@ -447,7 +447,7 @@
                         </div>
 
                         <div class="item">
-                            <div class="cardWithImages">
+                            <div class="cardWithImages card__hover">
                                 <img src="img/insta_1794.jpg" alt="Просмотры видео (боты)"
                                     title="Просмотры видео (боты)">
                                 <hr>
@@ -476,7 +476,7 @@
                         </div>
 
                         <div class="item">
-                            <div class="cardWithImages">
+                            <div class="cardWithImages card__hover">
                                 <img src="img/view1.jpg" alt="Просмотры видео с охватом"
                                     title="Просмотры видео с охватом">
                                 <hr>
@@ -584,34 +584,35 @@
 
 
         // Preloader
-        let preloader;
+        // let preloader;
 
-        function loadNow(opacity) {
-            if (opacity <= 0) {
-                displayContent();
-            } else {
-                preloader.style.opacity = opacity;
-                window.setTimeout(function () {
-                    loadNow(opacity - 0.02)
-                }, 50);
-            }
-        }
+        // function loadNow(opacity) {
+        //     if (opacity <= 0) {
+        //         displayContent();
+        //     } else {
+        //         preloader.style.opacity = opacity;
+        //         window.setTimeout(function () {
+        //             loadNow(opacity - 0.02)
+        //         }, 50);
+        //     }
+        // }
 
-        function displayContent() {
-            preloader.style.display = 'none';
-            document.querySelector('#content').style.display = 'block';
-        }
+        // function displayContent() {
+        //     preloader.style.display = 'none';
+        //     document.querySelector('#content').style.display = 'block';
+        // }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            preloader = document.querySelector('#preloader');
-            loadNow(1);
-        });
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     preloader = document.querySelector('#preloader');
+        //     loadNow(1);
+        // });
 
         // owlCarousel
         var owl = $('.owl-carousel');
         owl.owlCarousel({
             loop: true,
             nav: false,
+            lazyLoadEager: true,
             responsiveClass: true,
             responsive: {
                 0: {
@@ -633,7 +634,7 @@
 
             },
             margin: 10,
-            autoplay: true,
+            autoplay: false,
             autoplayHoverPause: true
         });
     </script>
