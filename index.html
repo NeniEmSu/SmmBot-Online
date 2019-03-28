@@ -36,7 +36,7 @@
 
 <body>
 
-    <!-- <div id="preloader"></div> -->
+    <div id="preloader"></div>
     <div id="content">
         <header>
 
@@ -584,28 +584,28 @@
 
 
         // Preloader
-        // let preloader;
+        let preloader;
 
-        // function loadNow(opacity) {
-        //     if (opacity <= 0) {
-        //         displayContent();
-        //     } else {
-        //         preloader.style.opacity = opacity;
-        //         window.setTimeout(function () {
-        //             loadNow(opacity - 0.02)
-        //         }, 50);
-        //     }
-        // }
+        function loadNow(opacity) {
+            if (opacity <= 0) {
+                displayContent();
+            } else {
+                preloader.style.opacity = opacity;
+                window.setTimeout(function () {
+                    loadNow(opacity - 0.02)
+                }, 50);
+            }
+        }
 
-        // function displayContent() {
-        //     preloader.style.display = 'none';
-        //     document.querySelector('#content').style.display = 'block';
-        // }
+        function displayContent() {
+            preloader.style.display = 'none';
+            document.querySelector('#content').style.display = 'block';
+        }
 
-        // document.addEventListener("DOMContentLoaded", function () {
-        //     preloader = document.querySelector('#preloader');
-        //     loadNow(1);
-        // });
+        document.addEventListener("DOMContentLoaded", function () {
+            preloader = document.querySelector('#preloader');
+            loadNow(1);
+        });
 
         // owlCarousel
         var owl = $('.owl-carousel');
@@ -634,7 +634,7 @@
 
             },
             margin: 10,
-            autoplay: false,
+            autoplay: true,
             autoplayHoverPause: true
         });
     </script>
