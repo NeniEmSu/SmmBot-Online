@@ -287,12 +287,9 @@ main {
       color: #333333;
       text-align: center;
       margin: 0 auto; }
-      main .threeCards .card:nth-child(1) .cardParag {
-        padding-bottom: 60px; }
-      main .threeCards .card:nth-child(2) .cardParag {
-        padding-bottom: 10px; }
-      main .threeCards .card:nth-child(3) .cardParag {
-        padding-bottom: 95px; }
+      main .threeCards .card .cardParag {
+        height: 250px;
+        margin: 15px 0; }
       main .threeCards .card h3 {
         margin: 20px 0 0 0;
         text-align: center; }

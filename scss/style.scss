@@ -351,23 +351,12 @@ main {
             text-align: center;
             margin: 0 auto;
 
-            &:nth-child(1) {
-                .cardParag {
-                    padding-bottom: 60px;
-                }
+
+            .cardParag {
+                height: 250px;
+                margin: 15px 0;
             }
 
-            &:nth-child(2) {
-                .cardParag {
-                    padding-bottom: 10px;
-                }
-            }
-
-            &:nth-child(3) {
-                .cardParag {
-                    padding-bottom: 95px;
-                }
-            }
 
             h3 {
                 margin: 20px 0 0 0;
