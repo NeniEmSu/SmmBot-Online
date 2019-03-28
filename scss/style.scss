@@ -823,7 +823,7 @@ body#Услуги {
             }
         }
 
-        .btn {
+        a.btn {
             border: none;
             display: block;
             padding: 34px 68px;
@@ -862,7 +862,7 @@ body#Услуги {
     }
 
     main {
-        .btn {
+        a.btn {
             border: none;
             display: block;
             font-style: normal;
@@ -902,7 +902,7 @@ body#Услуги {
 
             .threeCards {
                 .card {
-                    .btn {
+                    a.btn {
                         position: relative;
                         margin: 10px auto;
                         padding: 14px 28px;
@@ -925,7 +925,7 @@ body#Услуги {
 
         .cards {
             .cardWithImages {
-                .btn {
+                a.btn {
                     position: relative;
                     margin: 10px auto;
                     padding: 14px 28px;
