@@ -528,9 +528,22 @@ main {
                         justify-self: center;
 
                         img {
+                            height: 120px;
+                            width: 299px;
                             margin: 3rem 0 0 0;
+                            object-fit: cover;
                         }
 
+                        hr {
+                            width: 80%;
+                            margin: 0 auto;
+                            border: 2px solid #E5E5E5;
+                        }
+
+                        .contained-text {
+                            height: 150px;
+                            margin: 10px 0;
+                        }
 
                         h3 {
                             font-style: normal;

@@ -406,7 +406,17 @@ main {
       text-align: center;
       justify-self: center; }
       main .cards .owl-carousel.owl-theme .item .cardWithImages img {
-        margin: 3rem 0 0 0; }
+        height: 120px;
+        width: 299px;
+        margin: 3rem 0 0 0;
+        object-fit: cover; }
+      main .cards .owl-carousel.owl-theme .item .cardWithImages hr {
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid #E5E5E5; }
+      main .cards .owl-carousel.owl-theme .item .cardWithImages .contained-text {
+        height: 150px;
+        margin: 10px 0; }
       main .cards .owl-carousel.owl-theme .item .cardWithImages h3 {
         font-style: normal;
         font-weight: normal;
