@@ -312,7 +312,7 @@ nav ul li a {
 }
 
 main {
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0;
     text-align: center;
@@ -320,6 +320,8 @@ main {
     align-items: center;
     justify-items: center;
     align-content: center;
+    align-self: center;
+    justify-self: center;
 
     section.one {
         h2 {
@@ -328,11 +330,11 @@ main {
     }
 
     .threeCards {
-        max-width: 100%;
+        width: 100%;
         margin: 1.5rem auto auto 0;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        grid-gap: 70px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 50px;
         justify-content: center;
         align-items: center;
         justify-items: center;
@@ -341,8 +343,9 @@ main {
 
         .card {
             display: block;
-            background-color: #ffffff; // margin: 1.5rem;
-            min-width: 360px;
+            background-color: #ffffff;
+            width: 100%;
+            min-width: 300px;
             max-width: 360px;
             height: 400px;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
@@ -506,8 +509,8 @@ main {
                     .cardWithImages {
                         background-color: #ffffff;
                         margin: 30px auto;
-                        min-width: 268px;
-                        max-width: 299px;
+                        min-width: 250px;
+                        max-width: 290px;
                         height: 400px;
                         background: #FFFFFF;
                         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
@@ -519,8 +522,8 @@ main {
                         img {
                             height: 120px;
                             width: 100%;
-                            min-width: 268px;
-                            max-width: 299px;
+                            min-width: 250px;
+                            max-width: 290px;
                             margin: 3rem 0 0 0;
                             object-fit: cover;
                         }
@@ -809,7 +812,7 @@ body#Услуги {
         h1 {
             margin: 0;
             margin-top: 6rem;
-            margin-right: 10rem;
+            margin-right: 20rem;
             margin-bottom: 5rem;
             background-image: none;
             -webkit-background-clip: none;
@@ -825,7 +828,7 @@ body#Услуги {
 
         a.btn {
             border: none;
-            display: block;
+            display: inline-block;
             padding: 34px 68px;
             font-style: normal;
             font-weight: normal;
@@ -841,8 +844,8 @@ body#Услуги {
             -moz-border-radius: 50px;
             -ms-border-radius: 50px;
             -o-border-radius: 50px;
-            margin: 0;
-            margin-top: 6rem;
+            margin: 0 40% 0 0;
+            margin-top: calc(100vh - 85vh);
             justify-self: center;
             transition: ease-in-out 300ms;
             -webkit-transition: ease-in-out 300ms;
@@ -864,7 +867,7 @@ body#Услуги {
     main {
         a.btn {
             border: none;
-            display: block;
+            display: inline-block;
             font-style: normal;
             font-weight: normal;
             line-height: normal;
@@ -904,7 +907,7 @@ body#Услуги {
                 .card {
                     a.btn {
                         position: relative;
-                        margin: 10px auto;
+                        margin: 0 auto;
                         padding: 14px 28px;
                     }
                 }
@@ -927,7 +930,7 @@ body#Услуги {
             .cardWithImages {
                 a.btn {
                     position: relative;
-                    margin: 10px auto;
+                    margin: 0 auto;
                     padding: 14px 28px;
                 }
             }

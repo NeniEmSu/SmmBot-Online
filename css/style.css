@@ -256,22 +256,24 @@ nav ul li a {
         opacity: 1; }
 
 main {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0;
   text-align: center;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  align-content: center; }
+  align-content: center;
+  align-self: center;
+  justify-self: center; }
   main section.one h2 {
     margin-bottom: 60px; }
   main .threeCards {
-    max-width: 100%;
+    width: 100%;
     margin: 1.5rem auto auto 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 50px;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -279,7 +281,8 @@ main {
     main .threeCards .card {
       display: block;
       background-color: #ffffff;
-      min-width: 360px;
+      width: 100%;
+      min-width: 300px;
       max-width: 360px;
       height: 400px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
@@ -393,8 +396,8 @@ main {
     main .cards .owl-carousel.owl-theme .item .cardWithImages {
       background-color: #ffffff;
       margin: 30px auto;
-      min-width: 268px;
-      max-width: 299px;
+      min-width: 250px;
+      max-width: 290px;
       height: 400px;
       background: #FFFFFF;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
@@ -405,8 +408,8 @@ main {
       main .cards .owl-carousel.owl-theme .item .cardWithImages img {
         height: 120px;
         width: 100%;
-        min-width: 268px;
-        max-width: 299px;
+        min-width: 250px;
+        max-width: 290px;
         margin: 3rem 0 0 0;
         object-fit: cover; }
       main .cards .owl-carousel.owl-theme .item .cardWithImages hr {
@@ -610,7 +613,7 @@ body#Услуги .headerImage {
   body#Услуги .headerImage h1 {
     margin: 0;
     margin-top: 6rem;
-    margin-right: 10rem;
+    margin-right: 20rem;
     margin-bottom: 5rem;
     background-image: none;
     -webkit-background-clip: none;
@@ -620,9 +623,9 @@ body#Услуги .headerImage {
     font-size: 48px; }
     body#Услуги .headerImage h1 b {
       font-size: 58px; }
-  body#Услуги .headerImage button.btn {
+  body#Услуги .headerImage a.btn {
     border: none;
-    display: block;
+    display: inline-block;
     padding: 34px 68px;
     font-style: normal;
     font-weight: normal;
@@ -638,15 +641,15 @@ body#Услуги .headerImage {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    margin: 0;
-    margin-top: 6rem;
+    margin: 0 40% 0 0;
+    margin-top: calc(100vh - 85vh);
     justify-self: center;
     transition: ease-in-out 300ms;
     -webkit-transition: ease-in-out 300ms;
     -moz-transition: ease-in-out 300ms;
     -ms-transition: ease-in-out 300ms;
     -o-transition: ease-in-out 300ms; }
-    body#Услуги .headerImage button.btn:hover {
+    body#Услуги .headerImage a.btn:hover {
       transform: scale(1.1);
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
@@ -654,9 +657,9 @@ body#Услуги .headerImage {
       -o-transform: scale(1.1);
       color: white; }
 
-body#Услуги main button.btn {
+body#Услуги main a.btn {
   border: none;
-  display: block;
+  display: inline-block;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -675,7 +678,7 @@ body#Услуги main button.btn {
   -moz-transition: ease-in-out 300ms;
   -ms-transition: ease-in-out 300ms;
   -o-transition: ease-in-out 300ms; }
-  body#Услуги main button.btn:hover {
+  body#Услуги main a.btn:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -686,9 +689,9 @@ body#Услуги main button.btn {
 body#Услуги main section.one h2 {
   font-size: 47px; }
 
-body#Услуги main section.one .threeCards .card button {
+body#Услуги main section.one .threeCards .card a.btn {
   position: relative;
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 14px 28px; }
 
 body#Услуги section.two h2 {
@@ -697,9 +700,9 @@ body#Услуги section.two h2 {
 body#Услуги section.three h2 {
   font-size: 41px; }
 
-body#Услуги section.three .cards .cardWithImages button {
+body#Услуги section.three .cards .cardWithImages a.btn {
   position: relative;
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 14px 28px; }
 
 body#Услуги footer {
@@ -1077,27 +1080,6 @@ body#Услуги footer {
       text-align: right; }
       body#Услуги .headerImage h1 b {
         font-size: 42px; }
-    body#Услуги .headerImage button.btn {
-      float: right;
-      border: none;
-      display: block;
-      padding: 24px 34px;
-      font-style: normal;
-      font-weight: normal;
-      line-height: normal;
-      text-align: center;
-      letter-spacing: 0.1em;
-      color: #ffffff;
-      text-decoration: none;
-      background: #2C5E8E;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      -ms-border-radius: 50px;
-      -o-border-radius: 50px;
-      margin: 0 18px 0 0;
-      margin-top: .5rem;
-      justify-self: center; }
   body#Услуги main section.one h2 {
     font-size: 28px; }
   body#Услуги section.two h2 {
@@ -1225,56 +1207,24 @@ body#Услуги footer {
         margin: 1rem auto; }
         footer .footerContainer .supportOptions hr {
           width: 90%; }
-  body#Услуги .headerImage {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/Услуги_header_background.png");
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-    body#Услуги .headerImage .headerImageInner {
-      display: block;
-      float: right;
-      justify-content: center;
-      align-items: center;
-      text-align: right;
-      padding: 0; }
-    body#Услуги .headerImage h1 {
-      margin: 0 14px 0 0;
-      padding: 5rem 0 0 0;
-      background-image: none;
-      -webkit-background-clip: none;
-      -webkit-text-fill-color: #000000;
-      color: #000000;
-      text-align: right; }
-      body#Услуги .headerImage h1 b {
-        font-size: 42px; }
-    body#Услуги .headerImage button.btn {
-      float: right;
-      border: none;
-      display: block;
-      padding: 24px 34px;
-      font-style: normal;
-      font-weight: normal;
-      line-height: normal;
-      text-align: center;
-      letter-spacing: 0.1em;
-      color: #ffffff;
-      text-decoration: none;
-      background: #2C5E8E;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      -ms-border-radius: 50px;
-      -o-border-radius: 50px;
-      margin: 0 18px 0 0;
-      margin-top: .5rem;
-      justify-self: center; }
-  body#Услуги main section.one h2 {
-    font-size: 28px; }
-  body#Услуги section.two h2 {
-    font-size: 28px; }
-  body#Услуги section.three h2 {
-    font-size: 28px; } }
+  body#Услуги .headerImage h1 {
+    margin-top: 20px;
+    font-size: 46px;
+    text-align: center !important; }
+  body#Услуги .headerImage a.btn {
+    align-self: center;
+    margin: 10px 20% 0 0;
+    padding: 18px 34px; }
+  body#Услуги main {
+    width: 100%; }
+    body#Услуги main h2 {
+      font-size: 28px; }
+    body#Услуги main section.one h2 {
+      font-size: 28px; }
+    body#Услуги main section.two h2 {
+      font-size: 28px; }
+    body#Услуги main section.three h2 {
+      font-size: 28px; } }
 
 @media screen and (max-width: 400px) {
   .logo {
@@ -1354,7 +1304,19 @@ body#Услуги footer {
   section.two h2 {
     font-size: 28px !important; }
   footer {
-    text-align: center; } }
+    text-align: center; }
+  body#Услуги .headerImage h1 {
+    margin-top: -20px;
+    font-size: 40px;
+    text-align: center !important; }
+  body#Услуги .headerImage a.btn {
+    align-self: center;
+    margin: 10px 20% 0 0;
+    padding: 18px 34px; }
+  body#Услуги main {
+    width: 100%; }
+    body#Услуги main h2 {
+      font-size: 28px; } }
 
 @media screen and (max-width: 360px) {
   .logo {
@@ -1516,8 +1478,8 @@ body#Услуги footer {
       section.three .cards .owl-carousel.owl-theme .item .cardWithImages {
         background-color: #ffffff;
         margin: 30px auto !important;
-        min-width: 268px;
-        max-width: 299px;
+        min-width: 250px;
+        max-width: 280px !important;
         min-height: 405px;
         max-height: 420px;
         background: #FFFFFF;
@@ -1607,7 +1569,14 @@ body#Услуги footer {
   main h2 {
     font-size: 28px; }
   body#Услуги .headerImage h1 {
-    font-size: 32px; }
+    margin-top: -20px;
+    font-size: 40px;
+    text-align: center !important; }
+  body#Услуги .headerImage a.btn {
+    position: relative;
+    align-self: center;
+    margin: 10px 20% 0 0;
+    padding: 18px 34px; }
   body#Услуги main {
     width: 100%; }
     body#Услуги main h2 {
@@ -1615,8 +1584,18 @@ body#Услуги footer {
 
 @media screen and (max-width: 320px) {
   .cardWithImages,
-  #Услуги .cardWithImages {
-    margin: 30px 10px !important; } }
+  #Услуги section.three .cards .owl-carousel.owl-theme .item .cardWithImages {
+    width: 100%;
+    max-width: 250px !important;
+    margin: 30px auto !important; }
+    .cardWithImages img,
+    #Услуги section.three .cards .owl-carousel.owl-theme .item .cardWithImages img {
+      height: 120px;
+      width: 100%;
+      min-width: 250px;
+      max-width: 250px;
+      margin: 3rem 0 0 0;
+      object-fit: cover; } }
 
 @media screen and (max-width: 720px) and (orientation: landscape) {
   .logo {
